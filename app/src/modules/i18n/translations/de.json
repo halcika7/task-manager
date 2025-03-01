@@ -1,0 +1,708 @@
+{
+  "locale": {
+    "en": "Englisch",
+    "fr": "Französisch",
+    "de": "Deutsch",
+    "bs": "Bosnisch"
+  },
+  "main": {
+    "nav": {
+      "features": "Funktionen",
+      "pricing": "Preise",
+      "about": "Über uns",
+      "contact": "Kontakt",
+      "signIn": "Anmelden",
+      "getStarted": "Loslegen",
+      "menu": "Menü",
+      "toggleMenu": "Menü umschalten"
+    },
+    "themeSwitch": {
+      "light": "Hell",
+      "dark": "Dunkel",
+      "system": "System"
+    },
+    "userNav": {
+      "signOut": "Abmelden",
+      "tasks": "Aufgaben",
+      "profile": "Profil",
+      "users": "Benutzer",
+      "activityLogs": "Aktivitätsprotokolle"
+    },
+    "footer": {
+      "description": "Modernes Aufgabenmanagement für schnell agierende Teams.",
+      "product": {
+        "title": "Produkt",
+        "features": "Funktionen",
+        "pricing": "Preise",
+        "integrations": "Integrationen",
+        "changelog": "Änderungsprotokoll",
+        "docs": "Dokumentation"
+      },
+      "company": {
+        "title": "Unternehmen",
+        "about": "Über uns",
+        "blog": "Blog",
+        "careers": "Karriere",
+        "customers": "Kunden",
+        "brand": "Marke"
+      },
+      "resources": {
+        "title": "Ressourcen",
+        "community": "Community",
+        "contact": "Kontakt",
+        "dpa": "AVV",
+        "privacy": "Datenschutz",
+        "terms": "Nutzungsbedingungen"
+      },
+      "newsletter": {
+        "title": "Newsletter abonnieren",
+        "description": "Erhalten Sie die neuesten Updates und Artikel direkt in Ihren Posteingang.",
+        "email": "E-Mail",
+        "placeholder": "Ihre E-Mail-Adresse",
+        "subscribe": "Abonnieren"
+      },
+      "copyright": {
+        "description": "Alle Rechte vorbehalten.",
+        "links": {
+          "privacy": "Datenschutz",
+          "terms": "Nutzungsbedingungen",
+          "cookies": "Cookies",
+          "sitemap": "Sitemap"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Aufgabenverwaltung",
+      "subtitle": "Neu gedacht",
+      "description": "Optimieren Sie Ihren Arbeitsablauf, steigern Sie die Produktivität und erreichen Sie mehr mit unserer modernen Aufgabenverwaltungslösung.",
+      "getStarted": "Jetzt starten",
+      "signIn": "Anmelden"
+    },
+    "features": {
+      "title": "Leistungsstarke Funktionen zur Steigerung Ihrer Produktivität",
+      "items": {
+        "taskOrganization": {
+          "title": "Aufgabenorganisation",
+          "description": "Organisieren Sie Aufgaben mit intuitiven Drag-and-Drop-Schnittstellen und anpassbaren Ansichten."
+        },
+        "teamCollaboration": {
+          "title": "Team-Zusammenarbeit",
+          "description": "Arbeiten Sie nahtlos zusammen mit Echtzeit-Updates und Team-Arbeitsbereichen."
+        },
+        "kanbanBoards": {
+          "title": "Kanban-Boards",
+          "description": "Visualisieren Sie den Arbeitsablauf mit anpassbaren Kanban-Boards."
+        },
+        "timeTracking": {
+          "title": "Zeiterfassung",
+          "description": "Verfolgen Sie die Zeit für Aufgaben und erstellen Sie detaillierte Berichte."
+        },
+        "smartFilters": {
+          "title": "Intelligente Filter",
+          "description": "Finden Sie Aufgaben schnell mit leistungsstarken Filter- und Suchmöglichkeiten."
+        },
+        "calendarView": {
+          "title": "Kalenderansicht",
+          "description": "Planen Sie voraus mit Kalenderintegration und Terminverfolgung."
+        },
+        "customTags": {
+          "title": "Benutzerdefinierte Tags",
+          "description": "Organisieren Sie Aufgaben mit benutzerdefinierten Tags und Kategorien."
+        },
+        "multipleViews": {
+          "title": "Mehrere Ansichten",
+          "description": "Wechseln Sie zwischen Listen-, Board- und Kalenderansicht."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Was unsere Nutzer sagen"
+    },
+    "cta": {
+      "title": "Bereit, Ihren Arbeitsablauf zu transformieren?",
+      "description": "Schließen Sie sich Tausenden von Teams an, die ihre Aufgabenverwaltung bereits revolutioniert haben.",
+      "getStarted": "Kostenlose Testversion starten",
+      "features": {
+        "taskAnalytics": {
+          "title": "Aufgabenanalyse",
+          "description": "Gewinnen Sie Einblicke in die Teamproduktivität und den Projektfortschritt"
+        },
+        "teamCollaboration": {
+          "title": "Team-Zusammenarbeit",
+          "description": "Arbeiten Sie nahtlos zusammen mit Echtzeit-Updates und Team-Arbeitsbereichen."
+        },
+        "customWorkflows": {
+          "title": "Anpassbare Workflows",
+          "description": "Erstellen Sie benutzerdefinierte Workflows zur Optimierung Ihrer Arbeit und Steigerung der Produktivität."
+        }
+      }
+    },
+    "meta": {
+      "title": "Aufgabenverwaltung",
+      "description": "Aufgabenverwaltung"
+    }
+  },
+  "auth": {
+    "forgot_password": {
+      "title": "Passwort vergessen?",
+      "description": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts",
+      "email": "E-Mail",
+      "back_to_login": "Zurück zur Anmeldung",
+      "error_message": "Link konnte nicht gesendet werden",
+      "sending_reset_link": "Link wird gesendet...",
+      "send_reset_link": "Link senden",
+      "check_email": "Überprüfen Sie Ihre E-Mails für einen Link zum Zurücksetzen Ihres Passworts.",
+      "check_spam_folder": "Wenn Sie ihn nicht sehen, überprüfen Sie Ihren Spam-Ordner.",
+      "inputs": {
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+        }
+      },
+      "meta": {
+        "title": "Passwort vergessen?",
+        "description": "Geben Sie Ihre E-Mail-Adresse ein und wir senden Ihnen einen Link zum Zurücksetzen Ihres Passworts"
+      }
+    },
+    "login": {
+      "title": "Willkommen zurück",
+      "description": "Melden Sie sich bei Ihrem Konto an",
+      "forgot_password": "Passwort vergessen?",
+      "sign_up": "Registrieren",
+      "dont_have_account": "Noch kein Konto?",
+      "or_continue_with": "Oder fortfahren mit",
+      "invalid_credentials": "Ungültige Anmeldedaten",
+      "signing_in": "Anmeldung läuft...",
+      "sign_in": "Anmelden",
+      "inputs": {
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+        },
+        "password": {
+          "label": "Passwort",
+          "placeholder": "Geben Sie Ihr Passwort ein"
+        }
+      },
+      "meta": {
+        "title": "Willkommen zurück",
+        "description": "Melden Sie sich bei Ihrem Konto an"
+      }
+    },
+    "register": {
+      "title": "Konto erstellen",
+      "description": "Geben Sie Ihre Informationen ein, um ein Konto zu erstellen",
+      "already_have_account": "Bereits ein Konto?",
+      "sign_in": "Anmelden",
+      "terms_of_service": "Nutzungsbedingungen",
+      "or_continue_with": "Oder fortfahren mit",
+      "error_message": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "creating_account": "Konto wird erstellt...",
+      "create_account": "Konto erstellen",
+      "inputs": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Geben Sie Ihren Namen ein"
+        },
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+        },
+        "password": {
+          "label": "Passwort",
+          "placeholder": "Geben Sie Ihr Passwort ein"
+        },
+        "confirm_password": {
+          "label": "Passwort bestätigen",
+          "placeholder": "Bestätigen Sie Ihr Passwort"
+        }
+      },
+      "meta": {
+        "title": "Konto erstellen",
+        "description": "Geben Sie Ihre Informationen ein, um ein Konto zu erstellen"
+      }
+    },
+    "reset_password": {
+      "title": "Passwort zurücksetzen",
+      "description": "Geben Sie Ihr neues Passwort ein",
+      "back_to_login": "Zurück zur Anmeldung",
+      "error_message": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+      "resetting_password": "Passwort wird zurückgesetzt...",
+      "reset_password": "Passwort zurücksetzen",
+      "inputs": {
+        "password": {
+          "label": "Neues Passwort",
+          "placeholder": "Geben Sie Ihr neues Passwort ein"
+        },
+        "confirm_password": {
+          "label": "Passwort bestätigen",
+          "placeholder": "Bestätigen Sie Ihr neues Passwort"
+        }
+      },
+      "meta": {
+        "title": "Passwort zurücksetzen",
+        "description": "Geben Sie Ihr neues Passwort ein"
+      }
+    },
+    "filed_errors": {
+      "email_required": "E-Mail ist erforderlich",
+      "invalid_email": "Ungültige E-Mail",
+      "password_required": "Passwort ist erforderlich",
+      "invalid_password": "Ungültiges Passwort",
+      "password_min_length": "Passwort muss mindestens 8 Zeichen lang sein",
+      "name_required": "Name ist erforderlich",
+      "invalid_name": "Ungültiger Name",
+      "name_min_length": "Name muss mindestens 2 Zeichen lang sein",
+      "confirm_password_required": "Passwortbestätigung ist erforderlich",
+      "invalid_confirm_password": "Ungültige Passwortbestätigung",
+      "confirm_password_min_length": "Passwortbestätigung muss mindestens 8 Zeichen lang sein",
+      "passwords_do_not_match": "Passwörter stimmen nicht überein",
+      "token_required": "Token ist erforderlich",
+      "invalid_token": "Ungültiger Token"
+    }
+  },
+  "globalError": {
+    "notFound": {
+      "title": "Seite nicht gefunden",
+      "description": "Die gesuchte Seite existiert nicht.",
+      "buttonGoBack": "Zurück",
+      "buttonGoHome": "Zur Startseite"
+    },
+    "error": {
+      "title": "Etwas ist schiefgelaufen",
+      "description": "Bitte versuchen Sie es später erneut.",
+      "buttonTryAgain": "Erneut versuchen",
+      "buttonGoHome": "Zur Startseite",
+      "button": "Zurücksetzen"
+    }
+  },
+  "appSidebar": {
+    "description": "Verwalten Sie Aufgaben effizient",
+    "nav": {
+      "tasks": "Aufgaben",
+      "users": "Benutzer",
+      "activityLogs": "Aktivitätsprotokolle",
+      "profile": "Profil",
+      "logout": "Abmelden",
+      "theme": "Design",
+      "language": "Sprache"
+    }
+  },
+  "table": {
+    "itemsPerPage": "Einträge pro Seite",
+    "noResults": "Keine Ergebnisse gefunden.",
+    "itemsPerPagePlaceholder": "Einträge pro Seite",
+    "previous": "Zurück",
+    "next": "Weiter"
+  },
+  "tasks": {
+    "filters": "Filter",
+    "sort": "Sortieren",
+    "clearFilters": "Filter zurücksetzen",
+    "createTask": "Aufgabe erstellen",
+    "dueDate": "Fälligkeitsdatum: {date}",
+    "assignedTo": "Zugewiesen an",
+    "description": "Beschreibung",
+    "comments": "Kommentare",
+    "validation": {
+      "createTask": {
+        "error": "Fehler beim Erstellen der Aufgabe",
+        "success": "Aufgabe erfolgreich erstellt"
+      },
+      "updateTask": {
+        "error": "Fehler beim Aktualisieren der Aufgabe",
+        "success": "Aufgabe erfolgreich aktualisiert"
+      },
+      "deleteTask": {
+        "error": "Fehler beim Löschen der Aufgabe",
+        "success": "Aufgabe erfolgreich gelöscht",
+        "invalidTaskId": "Ungültige Aufgaben-ID",
+        "requiredTaskId": "Aufgaben-ID ist erforderlich"
+      }
+    },
+    "status": {
+      "PENDING": "Ausstehend",
+      "IN_PROGRESS": "In Bearbeitung",
+      "COMPLETED": "Abgeschlossen"
+    },
+    "priority": {
+      "LOW": "Niedrig",
+      "MEDIUM": "Mittel",
+      "HIGH": "Hoch"
+    },
+    "category": {
+      "WORK": "Arbeit",
+      "PERSONAL": "Persönlich",
+      "OTHER": "Sonstiges",
+      "LEARNING": "Lernen"
+    },
+    "taskItem": {
+      "delete": "Aufgabe löschen",
+      "edit": "Aufgabe bearbeiten",
+      "openMenu": "Menü öffnen"
+    },
+    "filterModal": {
+      "title": "Aufgaben filtern",
+      "filters": "Filter",
+      "inputs": {
+        "search": {
+          "label": "Suche",
+          "placeholder": "Aufgaben durchsuchen..."
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Status auswählen"
+        },
+        "priority": {
+          "label": "Priorität",
+          "placeholder": "Priorität auswählen"
+        },
+        "category": {
+          "label": "Kategorie",
+          "placeholder": "Kategorie auswählen"
+        },
+        "assignee": {
+          "label": "Zugewiesen an",
+          "placeholder": "Zugewiesene durchsuchen..."
+        },
+        "createdBy": {
+          "label": "Erstellt von",
+          "placeholder": "Ersteller durchsuchen..."
+        },
+        "dateRange": {
+          "label": "Datumsbereich",
+          "placeholder": "Datumsbereich auswählen"
+        }
+      },
+      "applyFilters": "Filter anwenden",
+      "cancel": "Abbrechen",
+      "clearFilters": "Filter zurücksetzen",
+      "sort": {
+        "label": "Sortieren",
+        "placeholder": "Sortierung auswählen",
+        "dueDate": {
+          "asc": "Fälligkeitsdatum ↑",
+          "desc": "Fälligkeitsdatum ↓"
+        },
+        "createdAt": {
+          "asc": "Erstellungsdatum ↑",
+          "desc": "Erstellungsdatum ↓"
+        }
+      }
+    },
+    "createTaskModal": {
+      "title": "Aufgabe erstellen",
+      "description": "Neue Aufgabe erstellen",
+      "inputs": {
+        "title": {
+          "label": "Titel",
+          "placeholder": "Aufgabentitel eingeben"
+        },
+        "description": {
+          "label": "Beschreibung",
+          "placeholder": "Aufgabenbeschreibung eingeben"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Status auswählen"
+        },
+        "priority": {
+          "label": "Priorität",
+          "placeholder": "Priorität auswählen"
+        },
+        "category": {
+          "label": "Kategorie",
+          "placeholder": "Kategorie auswählen"
+        },
+        "assignee": {
+          "label": "Zugewiesen an",
+          "placeholder": "Person auswählen",
+          "emptyMessage": "Keine Benutzer gefunden"
+        },
+        "dueDate": {
+          "label": "Fälligkeitsdatum",
+          "placeholder": "Fälligkeitsdatum auswählen"
+        }
+      },
+      "buttons": {
+        "cancel": "Abbrechen",
+        "create": "Aufgabe erstellen"
+      }
+    },
+    "deleteTaskAlert": {
+      "title": "Aufgabe löschen",
+      "description": "Sind Sie sicher, dass Sie diese Aufgabe löschen möchten?",
+      "buttons": {
+        "cancel": "Abbrechen",
+        "delete": "Aufgabe löschen"
+      }
+    },
+    "editTaskModal": {
+      "title": "Aufgabe bearbeiten",
+      "description": "Nehmen Sie hier Änderungen an der Aufgabe vor. Klicken Sie auf Speichern, wenn Sie fertig sind.",
+      "buttons": {
+        "cancel": "Abbrechen",
+        "save": "Änderungen speichern"
+      }
+    },
+    "inputValidations": {
+      "invalidTitle": "Ungültiger Titel",
+      "requiredTitle": "Titel ist erforderlich",
+      "titleMinLength": "Titel muss mindestens 1 Zeichen lang sein",
+      "invalidDescription": "Ungültige Beschreibung",
+      "requiredDescription": "Beschreibung ist erforderlich",
+      "descriptionMinLength": "Beschreibung muss mindestens 1 Zeichen lang sein",
+      "invalidStatus": "Ungültiger Status",
+      "requiredStatus": "Status ist erforderlich",
+      "invalidPriority": "Ungültige Priorität",
+      "requiredPriority": "Priorität ist erforderlich",
+      "invalidCategory": "Ungültige Kategorie",
+      "requiredCategory": "Kategorie ist erforderlich",
+      "invalidAssigneeId": "Ungültige Benutzer-ID",
+      "requiredAssigneeId": "Benutzer-ID ist erforderlich",
+      "invalidDueDate": "Ungültiges Fälligkeitsdatum",
+      "requiredDueDate": "Fälligkeitsdatum ist erforderlich",
+      "invalidId": "Ungültige ID",
+      "requiredId": "ID ist erforderlich"
+    }
+  },
+  "profile": {
+    "title": "Profilinformationen",
+    "description": "Verwalten Sie Ihre persönlichen Informationen und E-Mail-Einstellungen.",
+    "tabs": {
+      "general": "Allgemein",
+      "security": "Sicherheit"
+    },
+    "validation": {
+      "updatePassword": {
+        "error": "Fehler beim Aktualisieren des Passworts",
+        "success": "Passwort erfolgreich aktualisiert"
+      },
+      "updateProfile": {
+        "error": "Fehler beim Aktualisieren des Profils",
+        "success": "Profil erfolgreich aktualisiert"
+      }
+    },
+    "generalTab": {
+      "title": "Profilinformationen",
+      "description": "Aktualisieren Sie Ihre persönlichen Informationen und E-Mail-Einstellungen."
+    },
+    "passwordForm": {
+      "title": "Passwort aktualisieren",
+      "description": "Aktualisieren Sie hier Ihr Passwort. Klicken Sie auf Speichern, wenn Sie fertig sind.",
+      "buttons": {
+        "updatePassword": "Passwort aktualisieren",
+        "reset": "Zurücksetzen"
+      },
+      "inputs": {
+        "password": {
+          "label": "Neues Passwort",
+          "placeholder": "Geben Sie Ihr neues Passwort ein"
+        },
+        "confirmPassword": {
+          "label": "Passwort bestätigen",
+          "placeholder": "Bestätigen Sie Ihr neues Passwort"
+        }
+      }
+    },
+    "profileForm": {
+      "title": "Profilinformationen",
+      "description": "Aktualisieren Sie Ihre persönlichen Informationen und E-Mail-Einstellungen.",
+      "inputs": {
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "Geben Sie Ihre E-Mail-Adresse ein"
+        },
+        "name": {
+          "label": "Name",
+          "placeholder": "Geben Sie Ihren Namen ein"
+        }
+      },
+      "buttons": {
+        "cancel": "Zurücksetzen",
+        "save": "Änderungen speichern"
+      }
+    },
+    "securityTab": {
+      "title": "Sicherheitseinstellungen",
+      "description": "Verwalten Sie Ihr Passwort und Sicherheitseinstellungen, um Ihr Konto zu schützen."
+    },
+    "inputsValidation": {
+      "invalidId": "Ungültige ID",
+      "requiredId": "ID ist erforderlich",
+      "invalidPassword": "Ungültiges Passwort",
+      "passwordMinLength": "Passwort muss mindestens 8 Zeichen lang sein",
+      "requiredPassword": "Passwort ist erforderlich",
+      "passwordsDoNotMatch": "Passwörter stimmen nicht überein",
+      "invalidEmail": "Ungültige E-Mail",
+      "requiredEmail": "E-Mail ist erforderlich",
+      "invalidName": "Ungültiger Name",
+      "requiredName": "Name ist erforderlich",
+      "nameMinLength": "Name muss mindestens 2 Zeichen lang sein"
+    }
+  },
+  "comments": {
+    "placeholder": "Kommentar hinzufügen...",
+    "inputValidations": {
+      "invalidContent": "Ungültiger Inhalt",
+      "requiredContent": "Inhalt ist erforderlich",
+      "contentMinLength": "Inhalt muss mindestens 1 Zeichen lang sein",
+      "invalidTaskId": "Ungültige Aufgaben-ID",
+      "requiredTaskId": "Aufgaben-ID ist erforderlich"
+    },
+    "createComment": {
+      "error": "Fehler beim Erstellen des Kommentars",
+      "success": "Kommentar erfolgreich erstellt"
+    },
+    "deleteComment": {
+      "error": "Fehler beim Löschen des Kommentars",
+      "success": "Kommentar erfolgreich gelöscht"
+    }
+  },
+  "activityLogs": {
+    "commentDetails": {
+      "onTask": "Zur Aufgabe: {{taskTitle}}",
+      "created": "Erstellt",
+      "updated": "Aktualisiert",
+      "edited": "bearbeitet",
+      "deleted": "Gelöscht",
+      "date": "am {{date}}"
+    },
+    "taskDetails": {
+      "status": {
+        "PENDING": "Ausstehend",
+        "IN_PROGRESS": "In Bearbeitung",
+        "COMPLETED": "Abgeschlossen"
+      },
+      "category": {
+        "WORK": "Arbeit",
+        "PERSONAL": "Persönlich",
+        "OTHER": "Sonstiges",
+        "LEARNING": "Lernen"
+      }
+    }
+  },
+  "users": {
+    "filters": "Filter",
+    "sort": "Sortieren",
+    "clearFilters": "Filter zurücksetzen",
+    "createUser": "Benutzer erstellen",
+    "validation": {
+      "createUser": {
+        "error": "Fehler beim Erstellen des Benutzers",
+        "success": "Benutzer erfolgreich erstellt"
+      },
+      "updateUser": {
+        "error": "Fehler beim Aktualisieren des Benutzers",
+        "success": "Benutzer erfolgreich aktualisiert"
+      },
+      "deleteUser": {
+        "error": "Fehler beim Löschen des Benutzers",
+        "success": "Benutzer erfolgreich gelöscht",
+        "invalidUserId": "Ungültige Benutzer-ID",
+        "requiredUserId": "Benutzer-ID ist erforderlich"
+      }
+    },
+    "userItem": {
+      "delete": "Benutzer löschen",
+      "edit": "Benutzer bearbeiten",
+      "openMenu": "Menü öffnen"
+    },
+    "filterModal": {
+      "title": "Benutzer filtern",
+      "filters": "Filter",
+      "inputs": {
+        "search": {
+          "label": "Suche",
+          "placeholder": "Benutzer durchsuchen..."
+        },
+        "role": {
+          "label": "Rolle",
+          "placeholder": "Rolle auswählen"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Status auswählen"
+        },
+        "dateRange": {
+          "label": "Datumsbereich",
+          "placeholder": "Datumsbereich auswählen"
+        }
+      },
+      "applyFilters": "Filter anwenden",
+      "cancel": "Abbrechen",
+      "clearFilters": "Filter zurücksetzen",
+      "sort": {
+        "label": "Sortieren",
+        "placeholder": "Sortierung auswählen",
+        "createdAt": {
+          "asc": "Erstellungsdatum ↑",
+          "desc": "Erstellungsdatum ↓"
+        },
+        "name": {
+          "asc": "Name ↑",
+          "desc": "Name ↓"
+        }
+      }
+    },
+    "createUserModal": {
+      "title": "Benutzer erstellen",
+      "description": "Neuen Benutzer erstellen",
+      "inputs": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Benutzername eingeben"
+        },
+        "email": {
+          "label": "E-Mail",
+          "placeholder": "Benutzer-E-Mail eingeben"
+        },
+        "role": {
+          "label": "Rolle",
+          "placeholder": "Rolle auswählen"
+        }
+      },
+      "buttons": {
+        "cancel": "Abbrechen",
+        "create": "Benutzer erstellen"
+      }
+    },
+    "deleteUserAlert": {
+      "title": "Benutzer löschen",
+      "description": "Sind Sie sicher, dass Sie diesen Benutzer löschen möchten?",
+      "buttons": {
+        "cancel": "Abbrechen",
+        "delete": "Benutzer löschen"
+      }
+    },
+    "editUserModal": {
+      "title": "Benutzer bearbeiten",
+      "description": "Nehmen Sie hier Änderungen am Benutzer vor. Klicken Sie auf Speichern, wenn Sie fertig sind.",
+      "buttons": {
+        "cancel": "Abbrechen",
+        "save": "Änderungen speichern"
+      }
+    },
+    "inputValidations": {
+      "invalidName": "Ungültiger Name",
+      "requiredName": "Name ist erforderlich",
+      "nameMinLength": "Name muss mindestens 2 Zeichen lang sein",
+      "invalidEmail": "Ungültige E-Mail",
+      "requiredEmail": "E-Mail ist erforderlich",
+      "invalidRole": "Ungültige Rolle",
+      "requiredRole": "Rolle ist erforderlich",
+      "invalidId": "Ungültige ID",
+      "requiredId": "ID ist erforderlich"
+    }
+  },
+  "taskWebsockets": {
+    "taskCreated": "Erstellt",
+    "taskUpdated": "Aktualisiert",
+    "taskDeleted": "Gelöscht",
+    "taskReminder": "Erinnerung für Aufgabe",
+    "viewTask": "Zu Aufgabe gehen",
+    "hoursUntilDue": "{hours} Stunden bis Ablauf"
+  }
+}

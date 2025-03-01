@@ -1,0 +1,20 @@
+{
+  "welcomeHeader": "Dobrodošli u Task Manager!",
+  "greeting": "Zdravo",
+  "important": "Važno:",
+  "temporaryPasswordNotice": "Kreiran je račun za vas. Molimo koristite sljedeću privremenu lozinku za prijavu:",
+  "passwordChangeNotice": "Iz sigurnosnih razloga, morat ćete promijeniti lozinku prilikom prve prijave.",
+  "welcomeMessage": "Dobrodošli u Task Manager! Drago nam je što ste s nama. Evo šta sve možete raditi na našoj platformi:",
+  "features": {
+    "createTasks": "Kreirati i upravljati zadacima",
+    "setDueDates": "Postaviti rokove i podsjetnike",
+    "collaborate": "Sarađivati sa članovima tima",
+    "trackProgress": "Pratiti napredak zadataka",
+    "organize": "Organizovati zadatke po kategorijama"
+  },
+  "getStartedWithPassword": "Nakon što promijenite lozinku, možete kreirati svoj prvi zadatak:",
+  "getStarted": "Počnite kreiranjem svog prvog zadatka:",
+  "createTaskButton": "Kreiraj zadatak",
+  "supportMessage": "Ako imate pitanja, slobodno se obratite našem timu za podršku.",
+  "footerText": "Primili ste ovaj email jer ste se registrovali na Task Manager."
+}

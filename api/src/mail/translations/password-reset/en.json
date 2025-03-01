@@ -1,0 +1,9 @@
+{
+  "subject": "Reset Your Password",
+  "greeting": "Hi",
+  "message": "We received a request to reset your password. Click the button below to create a new password:",
+  "buttonText": "Reset Password",
+  "expirationNotice": "This password reset link will expire in 60 minutes.",
+  "ignoreMessage": "If you didn't request a password reset, you can safely ignore this email.",
+  "footerText": "This is an automated message, please do not reply to this email."
+}

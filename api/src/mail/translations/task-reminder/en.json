@@ -1,0 +1,10 @@
+{
+  "title": "Task Reminder",
+  "greeting": "Hi, {{userName}}",
+  "reminder": "This is a reminder that your task {{taskTitle}} is due in {{hoursUntilDue}} hours.",
+  "completeTask": "Please make sure to complete it on time or update its status if needed.",
+  "viewTask": "View Task",
+  "ignore": "If you've already completed this task, you can ignore this reminder.",
+  "footer": "This is an automated message from Task Manager. Please do not reply to this email.",
+  "subject": "Task Reminder: \"{{taskTitle}}\" is due in {{hoursUntilDue}} hours"
+}

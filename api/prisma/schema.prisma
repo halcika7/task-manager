@@ -1,0 +1,121 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  USER
+}
+
+enum TaskStatus {
+  PENDING
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum TaskPriority {
+  LOW
+  MEDIUM
+  HIGH
+}
+
+enum TaskCategory {
+  WORK
+  PERSONAL
+  LEARNING
+  OTHER
+}
+
+model User {
+  id                 String  @id @default(cuid())
+  email              String  @unique
+  password           String? // Optional because OAuth users might not have a password
+  name               String
+  role               Role    @default(USER)
+  hashedRefreshToken String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  locale String? @default("en")
+
+  // Relations
+  tasks        Task[]
+  comments     TaskComment[]
+  createdTasks Task[]        @relation("TaskCreator")
+  activityLogs ActivityLog[]
+}
+
+model Task {
+  id          String       @id @default(cuid())
+  title       String
+  description String?
+  status      TaskStatus   @default(PENDING)
+  priority    TaskPriority @default(MEDIUM)
+  category    TaskCategory @default(WORK)
+  position    Int          @default(0)
+  dueDate     DateTime?
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+
+  // Relations
+  assignedTo   User          @relation(fields: [assignedToId], references: [id], onDelete: Cascade)
+  assignedToId String
+  createdBy    User          @relation("TaskCreator", fields: [createdById], references: [id], onDelete: Cascade)
+  createdById  String
+  comments     TaskComment[]
+
+  @@index([assignedToId])
+  @@index([createdById])
+  @@index([status, position])
+}
+
+model TaskComment {
+  id        String   @id @default(cuid())
+  content   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Relations
+  task   Task   @relation(fields: [taskId], references: [id], onDelete: Cascade)
+  taskId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  userId String
+
+  @@index([taskId])
+  @@index([userId])
+}
+
+enum ActivityLogAction {
+  CREATE_USER
+  UPDATE_USER
+  DELETE_USER
+  CREATE_TASK
+  UPDATE_TASK
+  DELETE_TASK
+  CREATE_COMMENT
+  UPDATE_COMMENT
+  DELETE_COMMENT
+  TASK_REMINDER
+}
+
+// For activity logging
+model ActivityLog {
+  id         String            @id @default(cuid())
+  action     ActivityLogAction
+  entityId   String
+  entityType String
+  details    Json?
+  createdAt  DateTime          @default(now())
+  userId     String
+  user       User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([entityId])
+  @@index([entityType])
+}

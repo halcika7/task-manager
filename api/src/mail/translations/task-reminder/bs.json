@@ -1,0 +1,10 @@
+{
+  "title": "Obaveštenje o zadatku",
+  "greeting": "Zdravo, {{userName}}",
+  "reminder": "Ovaj je važan zadatak {{taskTitle}} završava za {{hoursUntilDue}} sati.",
+  "completeTask": "Molimo, obavezno ga završite u roku ili ažurirajte njegov status ako je potrebno.",
+  "viewTask": "Pogledaj zadatak",
+  "ignore": "Ako ste već završili ovaj zadatak, možete ga zanemariti.",
+  "footer": "Ovo je automatsko obaveštenje od Task Manager. Molimo ne odgovarajte na ovu email poruku.",
+  "subject": "Obaveštenje o zadatku: \"{{taskTitle}}\" završava za {{hoursUntilDue}} sati"
+}

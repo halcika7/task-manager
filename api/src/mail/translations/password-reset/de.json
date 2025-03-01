@@ -1,0 +1,9 @@
+{
+  "subject": "Passwort zurücksetzen",
+  "greeting": "Hallo",
+  "message": "Wir haben eine Anfrage zum Zurücksetzen Ihres Passworts erhalten. Klicken Sie auf den Button unten, um ein neues Passwort zu erstellen:",
+  "buttonText": "Passwort zurücksetzen",
+  "expirationNotice": "Dieser Link zum Zurücksetzen des Passworts läuft in 60 Minuten ab.",
+  "ignoreMessage": "Falls Sie keine Passwortzurücksetzung angefordert haben, können Sie diese E-Mail ignorieren.",
+  "footerText": "Dies ist eine automatisch generierte Nachricht, bitte antworten Sie nicht auf diese E-Mail."
+}

@@ -1,0 +1,772 @@
+{
+  "locale": {
+    "en": "Engleski",
+    "fr": "Francuski",
+    "de": "Njemački",
+    "bs": "Bosanski"
+  },
+  "main": {
+    "nav": {
+      "features": "Funkcionalnosti",
+      "pricing": "Cijene",
+      "about": "O nama",
+      "contact": "Kontakt",
+      "signIn": "Prijava",
+      "getStarted": "Započni",
+      "menu": "Meni",
+      "toggleMenu": "Otvori/zatvori meni"
+    },
+    "themeSwitch": {
+      "light": "Svijetla",
+      "dark": "Tamna",
+      "system": "Sistemska"
+    },
+    "userNav": {
+      "signOut": "Odjava",
+      "tasks": "Zadaci",
+      "profile": "Profil",
+      "users": "Korisnici",
+      "activityLogs": "Dnevnik aktivnosti"
+    },
+    "footer": {
+      "description": "Moderno upravljanje zadacima za timove koji se brzo kreću.",
+      "product": {
+        "title": "Proizvod",
+        "features": "Funkcionalnosti",
+        "pricing": "Cijene",
+        "integrations": "Integracije",
+        "changelog": "Historija promjena",
+        "docs": "Dokumentacija"
+      },
+      "company": {
+        "title": "Kompanija",
+        "about": "O nama",
+        "blog": "Blog",
+        "careers": "Karijere",
+        "customers": "Klijenti",
+        "brand": "Brend"
+      },
+      "resources": {
+        "title": "Resursi",
+        "community": "Zajednica",
+        "contact": "Kontakt",
+        "dpa": "DPA",
+        "privacy": "Privatnost",
+        "terms": "Uslovi korištenja"
+      },
+      "newsletter": {
+        "title": "Pretplatite se na naš newsletter",
+        "description": "Dobijajte najnovije vijesti i članke direktno u vaš inbox.",
+        "email": "Email",
+        "placeholder": "Unesite vaš email",
+        "subscribe": "Pretplati se"
+      },
+      "copyright": {
+        "description": "Sva prava zadržana.",
+        "links": {
+          "privacy": "Privatnost",
+          "terms": "Uslovi korištenja",
+          "cookies": "Kolačići",
+          "sitemap": "Mapa sajta"
+        }
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "title": "Upravljanje zadacima",
+      "subtitle": "Reimaginirano",
+      "description": "Unaprijedite svoj radni tok, povećajte produktivnost i postignite više s našim modernim rješenjem za upravljanje zadacima.",
+      "getStarted": "Započnite",
+      "signIn": "Prijava"
+    },
+    "features": {
+      "title": "Moćne funkcionalnosti za povećanje vaše produktivnosti",
+      "items": {
+        "taskOrganization": {
+          "title": "Organizacija zadataka",
+          "description": "Organizujte zadatke s intuitivnim drag-and-drop interfejsom i prilagodljivim prikazima."
+        },
+        "teamCollaboration": {
+          "title": "Timska saradnja",
+          "description": "Radite zajedno bez problema s ažuriranjima u realnom vremenu i timskim radnim prostorima."
+        },
+        "kanbanBoards": {
+          "title": "Kanban table",
+          "description": "Vizualizirajte radni tok s prilagodljivim Kanban tablama."
+        },
+        "timeTracking": {
+          "title": "Praćenje vremena",
+          "description": "Pratite vrijeme provedeno na zadacima i generirajte detaljne izvještaje."
+        },
+        "smartFilters": {
+          "title": "Pametni filteri",
+          "description": "Brzo pronađite zadatke pomoću moćnih filtera i mogućnosti pretraživanja."
+        },
+        "calendarView": {
+          "title": "Kalendarski prikaz",
+          "description": "Planirajte unaprijed s integracijom kalendara i praćenjem rokova."
+        },
+        "customTags": {
+          "title": "Prilagođene oznake",
+          "description": "Organizujte zadatke s prilagođenim oznakama i kategorijama."
+        },
+        "multipleViews": {
+          "title": "Višestruki prikazi",
+          "description": "Prebacujte se između liste, table i kalendarskog prikaza."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Šta kažu naši korisnici"
+    },
+    "cta": {
+      "title": "Spremni za transformaciju vašeg radnog toka?",
+      "description": "Pridružite se hiljadama timova koji su već revolucionirali svoje iskustvo upravljanja zadacima.",
+      "getStarted": "Započnite besplatnu probu",
+      "features": {
+        "taskAnalytics": {
+          "title": "Analitika zadataka",
+          "description": "Dobijte uvid u produktivnost tima i napredak projekta"
+        },
+        "teamCollaboration": {
+          "title": "Timska saradnja",
+          "description": "Radite zajedno bez problema s ažuriranjima u realnom vremenu i timskim radnim prostorima."
+        },
+        "customWorkflows": {
+          "title": "Prilagođeni radni tokovi",
+          "description": "Kreirajte prilagođene radne tokove za optimizaciju vašeg rada i povećanje produktivnosti."
+        }
+      }
+    },
+    "meta": {
+      "title": "Upravljanje zadacima",
+      "description": "Upravljanje zadacima"
+    }
+  },
+  "auth": {
+    "forgot_password": {
+      "title": "Zaboravili ste lozinku?",
+      "description": "Unesite vašu email adresu i poslat ćemo vam link za resetovanje lozinke",
+      "email": "Email",
+      "back_to_login": "Nazad na prijavu",
+      "error_message": "Neuspješno slanje linka za resetovanje",
+      "sending_reset_link": "Slanje linka za resetovanje...",
+      "send_reset_link": "Pošalji link za resetovanje",
+      "check_email": "Provjerite vaš email za link za resetovanje lozinke.",
+      "check_spam_folder": "Ako ga ne vidite, provjerite spam folder.",
+      "inputs": {
+        "email": {
+          "label": "Email",
+          "placeholder": "Unesite vaš email"
+        }
+      },
+      "meta": {
+        "title": "Zaboravili ste lozinku?",
+        "description": "Unesite vašu email adresu i poslat ćemo vam link za resetovanje lozinke"
+      }
+    },
+    "login": {
+      "title": "Dobrodošli nazad",
+      "description": "Prijavite se na vaš račun",
+      "forgot_password": "Zaboravili ste lozinku?",
+      "sign_up": "Registracija",
+      "dont_have_account": "Nemate račun?",
+      "or_continue_with": "Ili nastavite sa",
+      "invalid_credentials": "Nevažeći podaci",
+      "signing_in": "Prijava u toku...",
+      "sign_in": "Prijava",
+      "inputs": {
+        "email": {
+          "label": "Email",
+          "placeholder": "Unesite vaš email"
+        },
+        "password": {
+          "label": "Lozinka",
+          "placeholder": "Unesite vašu lozinku"
+        }
+      },
+      "meta": {
+        "title": "Dobrodošli nazad",
+        "description": "Prijavite se na vaš račun"
+      }
+    },
+    "register": {
+      "title": "Kreirajte račun",
+      "description": "Unesite vaše informacije za kreiranje računa",
+      "already_have_account": "Već imate račun?",
+      "sign_in": "Prijava",
+      "terms_of_service": "Uslovi korištenja",
+      "or_continue_with": "Ili nastavite sa",
+      "error_message": "Nešto nije u redu. Molimo pokušajte ponovo.",
+      "creating_account": "Kreiranje računa...",
+      "create_account": "Kreiraj račun",
+      "inputs": {
+        "name": {
+          "label": "Ime",
+          "placeholder": "Unesite vaše ime"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Unesite vaš email"
+        },
+        "password": {
+          "label": "Lozinka",
+          "placeholder": "Unesite vašu lozinku"
+        },
+        "confirm_password": {
+          "label": "Potvrda lozinke",
+          "placeholder": "Potvrdite vašu lozinku"
+        }
+      },
+      "meta": {
+        "title": "Kreirajte račun",
+        "description": "Unesite vaše informacije za kreiranje računa"
+      }
+    },
+    "reset_password": {
+      "title": "Resetovanje lozinke",
+      "description": "Unesite vašu novu lozinku",
+      "back_to_login": "Nazad na prijavu",
+      "error_message": "Nešto nije u redu. Molimo pokušajte ponovo.",
+      "resetting_password": "Resetovanje lozinke...",
+      "reset_password": "Resetuj lozinku",
+      "inputs": {
+        "password": {
+          "label": "Nova lozinka",
+          "placeholder": "Unesite vašu novu lozinku"
+        },
+        "confirm_password": {
+          "label": "Potvrda lozinke",
+          "placeholder": "Potvrdite vašu novu lozinku"
+        }
+      },
+      "meta": {
+        "title": "Resetovanje lozinke",
+        "description": "Unesite vašu novu lozinku"
+      }
+    },
+    "filed_errors": {
+      "email_required": "Email je obavezan",
+      "invalid_email": "Nevažeći email",
+      "password_required": "Lozinka je obavezna",
+      "invalid_password": "Nevažeća lozinka",
+      "password_min_length": "Lozinka mora imati najmanje 8 karaktera",
+      "name_required": "Ime je obavezno",
+      "invalid_name": "Nevažeće ime",
+      "name_min_length": "Ime mora imati najmanje 2 karaktera",
+      "confirm_password_required": "Potvrda lozinke je obavezna",
+      "invalid_confirm_password": "Nevažeća potvrda lozinke",
+      "confirm_password_min_length": "Potvrda lozinke mora imati najmanje 8 karaktera",
+      "passwords_do_not_match": "Lozinke se ne podudaraju",
+      "token_required": "Token je obavezan",
+      "invalid_token": "Nevažeći token"
+    }
+  },
+  "globalError": {
+    "notFound": {
+      "title": "Stranica nije pronađena",
+      "description": "Stranica koju tražite ne postoji.",
+      "buttonGoBack": "Nazad",
+      "buttonGoHome": "Na početnu"
+    },
+    "error": {
+      "title": "Nešto nije u redu",
+      "description": "Molimo pokušajte ponovo kasnije.",
+      "buttonTryAgain": "Pokušaj ponovo",
+      "buttonGoHome": "Na početnu",
+      "button": "Resetuj"
+    }
+  },
+  "appSidebar": {
+    "description": "Efikasno upravljajte zadacima",
+    "nav": {
+      "tasks": "Zadaci",
+      "users": "Korisnici",
+      "activityLogs": "Dnevnik aktivnosti",
+      "profile": "Profil",
+      "logout": "Odjava",
+      "theme": "Tema",
+      "language": "Jezik"
+    }
+  },
+  "table": {
+    "itemsPerPage": "Stavki po stranici",
+    "noResults": "Nema pronađenih rezultata.",
+    "itemsPerPagePlaceholder": "Stavki po stranici",
+    "previous": "Prethodna",
+    "next": "Sljedeća"
+  },
+  "tasks": {
+    "filters": "Filteri",
+    "sort": "Sortiraj",
+    "clearFilters": "Očisti filtere",
+    "createTask": "Kreiraj zadatak",
+    "dueDate": "Rok izvršenja: {date}",
+    "assignedTo": "Dodijeljeno",
+    "description": "Opis",
+    "comments": "Komentari",
+    "validation": {
+      "createTask": {
+        "error": "Greška pri kreiranju zadatka",
+        "success": "Zadatak uspješno kreiran"
+      },
+      "updateTask": {
+        "error": "Greška pri ažuriranju zadatka",
+        "success": "Zadatak uspješno ažuriran"
+      },
+      "deleteTask": {
+        "error": "Greška pri brisanju zadatka",
+        "success": "Zadatak uspješno obrisan",
+        "invalidTaskId": "Nevažeći ID zadatka",
+        "requiredTaskId": "ID zadatka je obavezan"
+      }
+    },
+    "status": {
+      "PENDING": "Na čekanju",
+      "IN_PROGRESS": "U toku",
+      "COMPLETED": "Završeno"
+    },
+    "priority": {
+      "LOW": "Nizak",
+      "MEDIUM": "Srednji",
+      "HIGH": "Visok"
+    },
+    "category": {
+      "WORK": "Posao",
+      "PERSONAL": "Lično",
+      "OTHER": "Ostalo",
+      "LEARNING": "Učenje"
+    },
+    "taskItem": {
+      "delete": "Obriši zadatak",
+      "edit": "Uredi zadatak",
+      "openMenu": "Otvori meni"
+    },
+    "filterModal": {
+      "title": "Filtriraj zadatke",
+      "filters": "Filteri",
+      "inputs": {
+        "search": {
+          "label": "Pretraga",
+          "placeholder": "Pretraži zadatke..."
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Odaberi status"
+        },
+        "priority": {
+          "label": "Prioritet",
+          "placeholder": "Odaberi prioritet"
+        },
+        "category": {
+          "label": "Kategorija",
+          "placeholder": "Odaberi kategoriju"
+        },
+        "assignee": {
+          "label": "Dodijeljeno",
+          "placeholder": "Pretraži dodijeljene..."
+        },
+        "createdBy": {
+          "label": "Kreirao",
+          "placeholder": "Pretraži kreatore..."
+        },
+        "dateRange": {
+          "label": "Raspon datuma",
+          "placeholder": "Odaberi raspon datuma"
+        }
+      },
+      "applyFilters": "Primijeni filtere",
+      "cancel": "Otkaži",
+      "clearFilters": "Očisti filtere",
+      "sort": {
+        "label": "Sortiraj",
+        "placeholder": "Odaberi sortiranje",
+        "dueDate": {
+          "asc": "Rok izvršenja ↑",
+          "desc": "Rok izvršenja ↓"
+        },
+        "createdAt": {
+          "asc": "Datum kreiranja ↑",
+          "desc": "Datum kreiranja ↓"
+        }
+      }
+    },
+    "createTaskModal": {
+      "title": "Kreiraj zadatak",
+      "description": "Kreiraj novi zadatak",
+      "inputs": {
+        "title": {
+          "label": "Naslov",
+          "placeholder": "Unesi naslov zadatka"
+        },
+        "description": {
+          "label": "Opis",
+          "placeholder": "Unesi opis zadatka"
+        },
+        "status": {
+          "label": "Status",
+          "placeholder": "Odaberi status"
+        },
+        "priority": {
+          "label": "Prioritet",
+          "placeholder": "Odaberi prioritet"
+        },
+        "category": {
+          "label": "Kategorija",
+          "placeholder": "Odaberi kategoriju"
+        },
+        "assignee": {
+          "label": "Dodijeljeno",
+          "placeholder": "Odaberi osobu",
+          "emptyMessage": "Nema pronađenih korisnika"
+        },
+        "dueDate": {
+          "label": "Rok izvršenja",
+          "placeholder": "Odaberi rok izvršenja"
+        }
+      },
+      "buttons": {
+        "cancel": "Otkaži",
+        "create": "Kreiraj zadatak"
+      }
+    },
+    "deleteTaskAlert": {
+      "title": "Obriši zadatak",
+      "description": "Da li ste sigurni da želite obrisati ovaj zadatak?",
+      "buttons": {
+        "cancel": "Otkaži",
+        "delete": "Obriši zadatak"
+      }
+    },
+    "editTaskModal": {
+      "title": "Uredi zadatak",
+      "description": "Napravite izmjene na zadatku ovdje. Kliknite sačuvaj kada završite.",
+      "buttons": {
+        "cancel": "Otkaži",
+        "save": "Sačuvaj izmjene"
+      }
+    },
+    "inputValidations": {
+      "invalidTitle": "Nevažeći naslov",
+      "requiredTitle": "Naslov je obavezan",
+      "titleMinLength": "Naslov mora imati najmanje 1 karakter",
+      "invalidDescription": "Nevažeći opis",
+      "requiredDescription": "Opis je obavezan",
+      "descriptionMinLength": "Opis mora imati najmanje 1 karakter",
+      "invalidStatus": "Nevažeći status",
+      "requiredStatus": "Status je obavezan",
+      "invalidPriority": "Nevažeći prioritet",
+      "requiredPriority": "Prioritet je obavezan",
+      "invalidCategory": "Nevažeća kategorija",
+      "requiredCategory": "Kategorija je obavezna",
+      "invalidAssigneeId": "Nevažeći ID dodijeljene osobe",
+      "requiredAssigneeId": "ID dodijeljene osobe je obavezan",
+      "invalidDueDate": "Nevažeći rok izvršenja",
+      "requiredDueDate": "Rok izvršenja je obavezan",
+      "invalidId": "Nevažeći ID",
+      "requiredId": "ID je obavezan"
+    }
+  },
+  "profile": {
+    "title": "Postavke profila",
+    "description": "Upravljajte vašim postavkama profila i sigurnosnim postavkama.",
+    "tabs": {
+      "general": "Općenito",
+      "security": "Sigurnost"
+    },
+    "validation": {
+      "updatePassword": {
+        "error": "Greška pri ažuriranju lozinke",
+        "success": "Lozinka uspješno ažurirana"
+      },
+      "updateProfile": {
+        "error": "Greška pri ažuriranju profila",
+        "success": "Profil uspješno ažuriran"
+      }
+    },
+    "generalTab": {
+      "title": "Informacije o profilu",
+      "description": "Ažurirajte vaše lične informacije i email postavke."
+    },
+    "passwordForm": {
+      "title": "Ažuriraj lozinku",
+      "description": "Ažurirajte vašu lozinku ovdje. Kliknite sačuvaj kada završite.",
+      "buttons": {
+        "updatePassword": "Ažuriraj lozinku",
+        "reset": "Resetuj"
+      },
+      "inputs": {
+        "password": {
+          "label": "Nova lozinka",
+          "placeholder": "Unesite vašu novu lozinku"
+        },
+        "confirmPassword": {
+          "label": "Potvrda lozinke",
+          "placeholder": "Potvrdite vašu novu lozinku"
+        }
+      }
+    },
+    "profileForm": {
+      "title": "Informacije o profilu",
+      "description": "Ažurirajte vaše lične informacije i email postavke.",
+      "inputs": {
+        "email": {
+          "label": "Email",
+          "placeholder": "Unesite vaš email"
+        },
+        "name": {
+          "label": "Ime",
+          "placeholder": "Unesite vaše ime"
+        }
+      },
+      "buttons": {
+        "cancel": "Resetuj",
+        "save": "Sačuvaj izmjene"
+      }
+    },
+    "securityTab": {
+      "title": "Sigurnosne postavke",
+      "description": "Upravljajte vašom lozinkom i sigurnosnim postavkama da biste zaštitili vaš račun."
+    },
+    "inputsValidation": {
+      "invalidId": "Nevažeći ID",
+      "requiredId": "ID je obavezan",
+      "invalidPassword": "Nevažeća lozinka",
+      "passwordMinLength": "Lozinka mora imati najmanje 8 karaktera",
+      "requiredPassword": "Lozinka je obavezna",
+      "passwordsDoNotMatch": "Lozinke se ne podudaraju",
+      "invalidEmail": "Nevažeći email",
+      "requiredEmail": "Email je obavezan",
+      "invalidName": "Nevažeće ime",
+      "requiredName": "Ime je obavezno",
+      "nameMinLength": "Ime mora imati najmanje 2 karaktera"
+    }
+  },
+  "comments": {
+    "placeholder": "Dodaj komentar...",
+    "inputValidations": {
+      "invalidContent": "Nevažeći sadržaj",
+      "requiredContent": "Sadržaj je obavezan",
+      "contentMinLength": "Sadržaj mora imati najmanje 1 karakter",
+      "invalidTaskId": "Nevažeći ID zadatka",
+      "requiredTaskId": "ID zadatka je obavezan"
+    },
+    "createComment": {
+      "error": "Greška pri kreiranju komentara",
+      "success": "Komentar uspješno kreiran"
+    },
+    "deleteComment": {
+      "error": "Greška pri brisanju komentara",
+      "success": "Komentar uspješno obrisan"
+    }
+  },
+  "activityLogs": {
+    "commentDetails": {
+      "onTask": "Na zadatku: {taskTitle}",
+      "created": "Kreiran",
+      "updated": "Ažuriran",
+      "edited": "uređen",
+      "deleted": "Obrisan",
+      "date": "dana {date}"
+    },
+    "taskDetails": {
+      "status": {
+        "PENDING": "Na čekanju",
+        "IN_PROGRESS": "U toku",
+        "COMPLETED": "Završeno"
+      },
+      "category": {
+        "WORK": "Posao",
+        "PERSONAL": "Lično",
+        "OTHER": "Ostalo",
+        "LEARNING": "Učenje"
+      },
+      "priority": {
+        "LOW": "Nizak",
+        "MEDIUM": "Srednji",
+        "HIGH": "Visok"
+      },
+      "categoryColumn": "Kategorija: {category}",
+      "dueDateColumn": "Rok izvršenja: {dueDate}",
+      "assignedToColumn": "Dodijeljeno: {assignedTo}",
+      "createdByColumn": "Kreirao: {createdBy}",
+      "created": "Kreiran",
+      "updated": "Ažuriran",
+      "deleted": "Obrisan",
+      "date": "dana {date}"
+    },
+    "userDetails": {
+      "created": "Kreiran",
+      "updated": "Ažuriran",
+      "deleted": "Obrisan",
+      "date": "dana {date}"
+    },
+    "filterModal": {
+      "filters": "Filteri",
+      "dialogTitle": "Filtriraj dnevnik aktivnosti",
+      "inputs": {
+        "search": {
+          "label": "Pretraga",
+          "placeholder": "Pretraži dnevnik aktivnosti..."
+        },
+        "action": {
+          "label": "Akcija",
+          "placeholder": "Odaberi akciju"
+        },
+        "entityType": {
+          "label": "Tip entiteta",
+          "placeholder": "Odaberi tip entiteta"
+        },
+        "dateRange": {
+          "label": "Raspon datuma",
+          "placeholder": "Odaberi raspon datuma"
+        }
+      },
+      "applyFilters": "Primijeni filtere",
+      "cancel": "Otkaži",
+      "clearFilters": "Očisti filtere",
+      "entityTypes": {
+        "USER": "Korisnik",
+        "TASK": "Zadatak",
+        "COMMENT": "Komentar"
+      },
+      "actions": {
+        "CREATE_USER": "Kreiraj korisnika",
+        "UPDATE_USER": "Ažuriraj korisnika",
+        "DELETE_USER": "Obriši korisnika",
+        "CREATE_TASK": "Kreiraj zadatak",
+        "UPDATE_TASK": "Ažuriraj zadatak",
+        "DELETE_TASK": "Obriši zadatak",
+        "CREATE_COMMENT": "Kreiraj komentar",
+        "UPDATE_COMMENT": "Ažuriraj komentar",
+        "DELETE_COMMENT": "Obriši komentar",
+        "TASK_REMINDER": "Podsjetnik za zadatak"
+      },
+      "columns": {
+        "action": "Akcija",
+        "entityType": "Tip entiteta",
+        "entityId": "ID entiteta",
+        "user": "Korisnik",
+        "createdAt": "Kreirano"
+      }
+    }
+  },
+  "users": {
+    "validation": {
+      "createUser": {
+        "error": "Greška pri kreiranju korisnika",
+        "success": "Korisnik uspješno kreiran"
+      },
+      "updateUser": {
+        "error": "Greška pri ažuriranju korisnika",
+        "success": "Korisnik uspješno ažuriran"
+      },
+      "deleteUser": {
+        "error": "Greška pri brisanju korisnika",
+        "success": "Korisnik uspješno obrisan",
+        "invalidUserId": "Nevažeći ID korisnika"
+      }
+    },
+    "inputsValidation": {
+      "invalidId": "Nevažeći ID",
+      "requiredId": "ID je obavezan",
+      "invalidEmail": "Nevažeći email",
+      "requiredEmail": "Email je obavezan",
+      "invalidName": "Nevažeće ime",
+      "requiredName": "Ime je obavezno",
+      "nameMinLength": "Ime mora imati najmanje 2 karaktera",
+      "invalidRole": "Nevažeća uloga",
+      "requiredRole": "Uloga je obavezna",
+      "invalidLocale": "Nevažeći jezik",
+      "requiredLocale": "Jezik je obavezan"
+    },
+    "columns": {
+      "name": "Ime",
+      "email": "Email",
+      "role": "Uloga",
+      "locale": "Jezik",
+      "createdAt": "Kreirano",
+      "actions": "Akcija",
+      "userActions": {
+        "edit": "Uredi",
+        "delete": "Obriši",
+        "openMenu": "Otvori meni"
+      }
+    },
+    "createUserModal": {
+      "title": "Kreiraj korisnika",
+      "description": "Kreiraj novi korisnika",
+      "trigger": "Kreiraj korisnika",
+      "inputs": {
+        "name": {
+          "label": "Ime",
+          "placeholder": "Unesite ime korisnika"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Unesite email korisnika"
+        },
+        "role": {
+          "label": "Uloga",
+          "placeholder": "Odaberite ulogu korisnika"
+        }
+      },
+      "buttons": {
+        "cancel": "Otkaži",
+        "create": "Kreiraj korisnika"
+      }
+    },
+    "roles": {
+      "admin": "Administrator",
+      "user": "Korisnik"
+    },
+    "deleteUserDialog": {
+      "title": "Obriši korisnika",
+      "description": "Da li ste sigurni da želite obrisati",
+      "description2": " ? Ova akcija je nepovratna i ne može biti vratljiva.",
+      "buttons": {
+        "cancel": "Otkaži",
+        "delete": "Obriši korisnika"
+      }
+    },
+    "editUserDialog": {
+      "title": "Uredi korisnika",
+      "buttons": {
+        "cancel": "Otkaži",
+        "save": "Sačuvaj izmjene"
+      }
+    },
+    "filterModal": {
+      "title": "Filtriraj korisnike",
+      "trigger": "Filtriraj korisnike",
+      "inputs": {
+        "search": {
+          "label": "Pretraga",
+          "placeholder": "Pretraži korisnike..."
+        },
+        "role": {
+          "label": "Uloga",
+          "placeholder": "Odaberite ulogu korisnika"
+        },
+        "dateRange": {
+          "label": "Raspon datuma",
+          "placeholder": "Odaberite raspon datuma"
+        }
+      },
+      "buttons": {
+        "applyFilters": "Primijeni filtere",
+        "cancel": "Otkaži",
+        "clearFilters": "Očisti filtere"
+      }
+    }
+  },
+  "taskWebsockets": {
+    "taskCreated": "Kreiran",
+    "taskUpdated": "Ažuriran",
+    "taskDeleted": "Obrisan",
+    "taskReminder": "Podsjetnik za zadatak",
+    "viewTask": "Pogledaj zadatak",
+    "hoursUntilDue": "{hours} sati do roka"
+  }
+}

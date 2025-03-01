@@ -1,0 +1,9 @@
+{
+  "subject": "Réinitialisation de votre mot de passe",
+  "greeting": "Bonjour",
+  "message": "Nous avons reçu une demande de réinitialisation de votre mot de passe. Cliquez sur le bouton ci-dessous pour créer un nouveau mot de passe :",
+  "buttonText": "Réinitialiser le mot de passe",
+  "expirationNotice": "Ce lien de réinitialisation expirera dans 60 minutes.",
+  "ignoreMessage": "Si vous n'avez pas demandé de réinitialisation de mot de passe, vous pouvez ignorer cet e-mail.",
+  "footerText": "Ceci est un message automatique, merci de ne pas répondre à cet e-mail."
+}

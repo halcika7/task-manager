@@ -1,0 +1,708 @@
+{
+  "locale": {
+    "en": "Anglais",
+    "fr": "Français",
+    "de": "Allemand",
+    "bs": "Bosniaque"
+  },
+  "home": {
+    "hero": {
+      "title": "Gestion des tâches",
+      "subtitle": "Réimaginer",
+      "description": "Streamlinez votre workflow, augmentez votre productivité et réalisez plus avec notre solution de gestion des tâches moderne.",
+      "getStarted": "Commencer",
+      "signIn": "Connexion"
+    },
+    "features": {
+      "title": "Fonctionnalités puissantes pour booster votre productivité",
+      "items": {
+        "taskOrganization": {
+          "title": "Organisation des tâches",
+          "description": "Organisez vos tâches avec des interfaces intuitives et des vues personnalisables."
+        },
+        "teamCollaboration": {
+          "title": "Collaboration en équipe",
+          "description": "Travaillez ensemble de manière fluide avec des mises à jour en temps réel et des espaces de travail en équipe."
+        },
+        "kanbanBoards": {
+          "title": "Tableaux Kanban",
+          "description": "Visualisez le workflow avec des tableaux Kanban personnalisables."
+        },
+        "timeTracking": {
+          "title": "Suivi du temps",
+          "description": "Suivez le temps passé sur les tâches et générez des rapports détaillés."
+        },
+        "smartFilters": {
+          "title": "Filtres intelligents",
+          "description": "Trouvez rapidement les tâches avec des filtres puissants et des capacités de recherche."
+        },
+        "calendarView": {
+          "title": "Vue calendrier",
+          "description": "Prévoyez à l'avance avec l'intégration calendrier et le suivi des délais."
+        },
+        "customTags": {
+          "title": "Tags personnalisés",
+          "description": "Organisez vos tâches avec des tags personnalisés et des catégories."
+        },
+        "multipleViews": {
+          "title": "Vues multiples",
+          "description": "Passez d'une vue liste à un tableau Kanban ou un calendrier."
+        }
+      }
+    },
+    "testimonials": {
+      "title": "Ce que nos utilisateurs disent"
+    },
+    "cta": {
+      "title": "Prêt à transformer votre workflow ?",
+      "description": "Rejoignez des centaines d'équipes qui ont déjà révolutionné leur expérience de gestion des tâches.",
+      "getStarted": "Commencer votre essai gratuit",
+      "features": {
+        "taskAnalytics": {
+          "title": "Analyse des tâches",
+          "description": "Obtenez des insights sur la productivité de l'équipe et le progrès du projet"
+        },
+        "teamCollaboration": {
+          "title": "Collaboration en équipe",
+          "description": "Travaillez ensemble de manière fluide avec des mises à jour en temps réel et des espaces de travail en équipe."
+        },
+        "customWorkflows": {
+          "title": "Workflows personnalisés",
+          "description": "Créez des workflows personnalisés pour vous adapter à vos besoins"
+        }
+      }
+    },
+    "meta": {
+      "title": "Gestion des tâches",
+      "description": "Streamlinez votre workflow, augmentez votre productivité et réalisez plus avec notre solution de gestion des tâches moderne."
+    }
+  },
+  "main": {
+    "nav": {
+      "features": "Fonctionnalités",
+      "pricing": "Tarifs",
+      "about": "À propos",
+      "contact": "Contact",
+      "signIn": "Connexion",
+      "getStarted": "Commencer",
+      "menu": "Menu",
+      "toggleMenu": "Basculer le menu"
+    },
+    "themeSwitch": {
+      "light": "Clair",
+      "dark": "Sombre",
+      "system": "Système"
+    },
+    "userNav": {
+      "signOut": "Déconnexion",
+      "tasks": "Tâches",
+      "profile": "Profil",
+      "users": "Utilisateurs",
+      "activityLogs": "Journaux d'activité"
+    },
+    "footer": {
+      "description": "Gestion moderne des tâches pour les équipes qui avancent vite.",
+      "product": {
+        "title": "Produit",
+        "features": "Fonctionnalités",
+        "pricing": "Tarifs",
+        "integrations": "Intégrations",
+        "changelog": "Journal des modifications",
+        "docs": "Documentation"
+      },
+      "company": {
+        "title": "Entreprise",
+        "about": "À propos",
+        "blog": "Blog",
+        "careers": "Carrières",
+        "customers": "Clients",
+        "brand": "Marque"
+      },
+      "resources": {
+        "title": "Ressources",
+        "community": "Communauté",
+        "contact": "Contact",
+        "dpa": "DPA",
+        "privacy": "Confidentialité",
+        "terms": "Conditions"
+      },
+      "newsletter": {
+        "title": "Abonnez-vous à notre newsletter",
+        "description": "Recevez les dernières mises à jour et articles directement dans votre boîte de réception.",
+        "email": "Email",
+        "placeholder": "Entrez votre email",
+        "subscribe": "S'abonner"
+      },
+      "copyright": {
+        "description": "Tous droits réservés.",
+        "links": {
+          "privacy": "Confidentialité",
+          "terms": "Conditions",
+          "cookies": "Cookies",
+          "sitemap": "Plan du site"
+        }
+      }
+    }
+  },
+  "auth": {
+    "forgot_password": {
+      "title": "Mot de passe oublié ?",
+      "description": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe",
+      "email": "E-mail",
+      "back_to_login": "Retour à la connexion",
+      "error_message": "Échec de l'envoi du lien",
+      "sending_reset_link": "Envoi du lien...",
+      "send_reset_link": "Envoyer le lien",
+      "check_email": "Vérifiez vos e-mails pour le lien de réinitialisation.",
+      "check_spam_folder": "Si vous ne le voyez pas, vérifiez votre dossier spam.",
+      "inputs": {
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Entrez votre e-mail"
+        }
+      },
+      "meta": {
+        "title": "Mot de passe oublié ?",
+        "description": "Entrez votre adresse e-mail et nous vous enverrons un lien pour réinitialiser votre mot de passe"
+      }
+    },
+    "login": {
+      "title": "Bienvenue",
+      "description": "Connectez-vous à votre compte",
+      "forgot_password": "Mot de passe oublié ?",
+      "sign_up": "S'inscrire",
+      "dont_have_account": "Vous n'avez pas de compte ?",
+      "or_continue_with": "Ou continuer avec",
+      "invalid_credentials": "Identifiants invalides",
+      "signing_in": "Connexion en cours...",
+      "sign_in": "Se connecter",
+      "inputs": {
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Entrez votre e-mail"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "Entrez votre mot de passe"
+        }
+      },
+      "meta": {
+        "title": "Bienvenue",
+        "description": "Connectez-vous à votre compte"
+      }
+    },
+    "register": {
+      "title": "Créer un compte",
+      "description": "Entrez vos informations pour créer un compte",
+      "already_have_account": "Vous avez déjà un compte ?",
+      "sign_in": "Se connecter",
+      "terms_of_service": "Conditions d'utilisation",
+      "or_continue_with": "Ou continuer avec",
+      "error_message": "Une erreur est survenue. Veuillez réessayer.",
+      "creating_account": "Création du compte...",
+      "create_account": "Créer un compte",
+      "inputs": {
+        "name": {
+          "label": "Nom",
+          "placeholder": "Entrez votre nom"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Entrez votre e-mail"
+        },
+        "password": {
+          "label": "Mot de passe",
+          "placeholder": "Entrez votre mot de passe"
+        },
+        "confirm_password": {
+          "label": "Confirmer le mot de passe",
+          "placeholder": "Confirmez votre mot de passe"
+        }
+      },
+      "meta": {
+        "title": "Créer un compte",
+        "description": "Entrez vos informations pour créer un compte"
+      }
+    },
+    "reset_password": {
+      "title": "Réinitialiser le mot de passe",
+      "description": "Entrez votre nouveau mot de passe",
+      "back_to_login": "Retour à la connexion",
+      "error_message": "Une erreur est survenue. Veuillez réessayer.",
+      "resetting_password": "Réinitialisation du mot de passe...",
+      "reset_password": "Réinitialiser le mot de passe",
+      "inputs": {
+        "password": {
+          "label": "Nouveau mot de passe",
+          "placeholder": "Entrez votre nouveau mot de passe"
+        },
+        "confirm_password": {
+          "label": "Confirmer le mot de passe",
+          "placeholder": "Confirmez votre nouveau mot de passe"
+        }
+      },
+      "meta": {
+        "title": "Réinitialiser le mot de passe",
+        "description": "Entrez votre nouveau mot de passe"
+      }
+    },
+    "filed_errors": {
+      "email_required": "L'e-mail est requis",
+      "invalid_email": "E-mail invalide",
+      "password_required": "Le mot de passe est requis",
+      "invalid_password": "Mot de passe invalide",
+      "password_min_length": "Le mot de passe doit contenir au moins 8 caractères",
+      "name_required": "Le nom est requis",
+      "invalid_name": "Nom invalide",
+      "name_min_length": "Le nom doit contenir au moins 2 caractères",
+      "confirm_password_required": "La confirmation du mot de passe est requise",
+      "invalid_confirm_password": "Confirmation du mot de passe invalide",
+      "confirm_password_min_length": "La confirmation du mot de passe doit contenir au moins 8 caractères",
+      "passwords_do_not_match": "Les mots de passe ne correspondent pas",
+      "token_required": "Le token est requis",
+      "invalid_token": "Token invalide"
+    }
+  },
+  "globalError": {
+    "notFound": {
+      "title": "Page non trouvée",
+      "description": "La page que vous recherchez n'existe pas.",
+      "buttonGoBack": "Retour",
+      "buttonGoHome": "Accueil"
+    },
+    "error": {
+      "title": "Une erreur est survenue",
+      "description": "Veuillez réessayer plus tard.",
+      "buttonTryAgain": "Réessayer",
+      "buttonGoHome": "Accueil",
+      "button": "Réinitialiser"
+    }
+  },
+  "appSidebar": {
+    "description": "Gérez vos tâches efficacement",
+    "nav": {
+      "tasks": "Tâches",
+      "users": "Utilisateurs",
+      "activityLogs": "Journaux d'activité",
+      "profile": "Profil",
+      "logout": "Déconnexion",
+      "theme": "Thème",
+      "language": "Langue"
+    }
+  },
+  "table": {
+    "itemsPerPage": "Éléments par page",
+    "noResults": "Aucun résultat trouvé.",
+    "itemsPerPagePlaceholder": "Éléments par page",
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "tasks": {
+    "filters": "Filtres",
+    "sort": "Trier",
+    "clearFilters": "Effacer les filtres",
+    "createTask": "Créer une tâche",
+    "dueDate": "Date d'échéance: {date}",
+    "assignedTo": "Assigné à",
+    "description": "Description",
+    "comments": "Commentaires",
+    "validation": {
+      "createTask": {
+        "error": "Erreur lors de la création de la tâche",
+        "success": "Tâche créée avec succès"
+      },
+      "updateTask": {
+        "error": "Erreur lors de la mise à jour de la tâche",
+        "success": "Tâche mise à jour avec succès"
+      },
+      "deleteTask": {
+        "error": "Erreur lors de la suppression de la tâche",
+        "success": "Tâche supprimée avec succès",
+        "invalidTaskId": "ID de tâche invalide",
+        "requiredTaskId": "L'ID de tâche est requis"
+      }
+    },
+    "status": {
+      "PENDING": "En attente",
+      "IN_PROGRESS": "En cours",
+      "COMPLETED": "Terminé"
+    },
+    "priority": {
+      "LOW": "Faible",
+      "MEDIUM": "Moyenne",
+      "HIGH": "Élevée"
+    },
+    "category": {
+      "WORK": "Travail",
+      "PERSONAL": "Personnel",
+      "OTHER": "Autre",
+      "LEARNING": "Apprentissage"
+    },
+    "taskItem": {
+      "delete": "Supprimer la tâche",
+      "edit": "Modifier la tâche",
+      "openMenu": "Ouvrir le menu"
+    },
+    "filterModal": {
+      "title": "Filtrer les tâches",
+      "filters": "Filtres",
+      "inputs": {
+        "search": {
+          "label": "Recherche",
+          "placeholder": "Rechercher des tâches..."
+        },
+        "status": {
+          "label": "Statut",
+          "placeholder": "Sélectionner un statut"
+        },
+        "priority": {
+          "label": "Priorité",
+          "placeholder": "Sélectionner une priorité"
+        },
+        "category": {
+          "label": "Catégorie",
+          "placeholder": "Sélectionner une catégorie"
+        },
+        "assignee": {
+          "label": "Assigné à",
+          "placeholder": "Rechercher des assignés..."
+        },
+        "createdBy": {
+          "label": "Créé par",
+          "placeholder": "Rechercher des créateurs..."
+        },
+        "dateRange": {
+          "label": "Plage de dates",
+          "placeholder": "Sélectionner une plage de dates"
+        }
+      },
+      "applyFilters": "Appliquer les filtres",
+      "cancel": "Annuler",
+      "clearFilters": "Effacer les filtres",
+      "sort": {
+        "label": "Trier",
+        "placeholder": "Sélectionner le tri",
+        "dueDate": {
+          "asc": "Date d'échéance ↑",
+          "desc": "Date d'échéance ↓"
+        },
+        "createdAt": {
+          "asc": "Date de création ↑",
+          "desc": "Date de création ↓"
+        }
+      }
+    },
+    "createTaskModal": {
+      "title": "Créer une tâche",
+      "description": "Créer une nouvelle tâche",
+      "inputs": {
+        "title": {
+          "label": "Titre",
+          "placeholder": "Entrer le titre de la tâche"
+        },
+        "description": {
+          "label": "Description",
+          "placeholder": "Entrer la description de la tâche"
+        },
+        "status": {
+          "label": "Statut",
+          "placeholder": "Sélectionner un statut"
+        },
+        "priority": {
+          "label": "Priorité",
+          "placeholder": "Sélectionner une priorité"
+        },
+        "category": {
+          "label": "Catégorie",
+          "placeholder": "Sélectionner une catégorie"
+        },
+        "assignee": {
+          "label": "Assigné à",
+          "placeholder": "Sélectionner une personne",
+          "emptyMessage": "Aucun utilisateur trouvé"
+        },
+        "dueDate": {
+          "label": "Date d'échéance",
+          "placeholder": "Sélectionner une date d'échéance"
+        }
+      },
+      "buttons": {
+        "cancel": "Annuler",
+        "create": "Créer la tâche"
+      }
+    },
+    "deleteTaskAlert": {
+      "title": "Supprimer la tâche",
+      "description": "Êtes-vous sûr de vouloir supprimer cette tâche ?",
+      "buttons": {
+        "cancel": "Annuler",
+        "delete": "Supprimer la tâche"
+      }
+    },
+    "editTaskModal": {
+      "title": "Modifier la tâche",
+      "description": "Effectuez les modifications de la tâche ici. Cliquez sur enregistrer une fois terminé.",
+      "buttons": {
+        "cancel": "Annuler",
+        "save": "Enregistrer les modifications"
+      }
+    },
+    "inputValidations": {
+      "invalidTitle": "Titre invalide",
+      "requiredTitle": "Le titre est requis",
+      "titleMinLength": "Le titre doit contenir au moins 1 caractère",
+      "invalidDescription": "Description invalide",
+      "requiredDescription": "La description est requise",
+      "descriptionMinLength": "La description doit contenir au moins 1 caractère",
+      "invalidStatus": "Statut invalide",
+      "requiredStatus": "Le statut est requis",
+      "invalidPriority": "Priorité invalide",
+      "requiredPriority": "La priorité est requise",
+      "invalidCategory": "Catégorie invalide",
+      "requiredCategory": "La catégorie est requise",
+      "invalidAssigneeId": "ID d'assigné invalide",
+      "requiredAssigneeId": "L'ID d'assigné est requis",
+      "invalidDueDate": "Date d'échéance invalide",
+      "requiredDueDate": "La date d'échéance est requise",
+      "invalidId": "ID invalide",
+      "requiredId": "L'ID est requis"
+    }
+  },
+  "profile": {
+    "title": "Paramètres du profil",
+    "description": "Gérez vos paramètres de profil et vos préférences de sécurité.",
+    "tabs": {
+      "general": "Général",
+      "security": "Sécurité"
+    },
+    "validation": {
+      "updatePassword": {
+        "error": "Erreur lors de la mise à jour du mot de passe",
+        "success": "Mot de passe mis à jour avec succès"
+      },
+      "updateProfile": {
+        "error": "Erreur lors de la mise à jour du profil",
+        "success": "Profil mis à jour avec succès"
+      }
+    },
+    "generalTab": {
+      "title": "Informations du profil",
+      "description": "Mettez à jour vos informations personnelles et vos préférences e-mail."
+    },
+    "passwordForm": {
+      "title": "Mettre à jour le mot de passe",
+      "description": "Mettez à jour votre mot de passe ici. Cliquez sur enregistrer une fois terminé.",
+      "buttons": {
+        "updatePassword": "Mettre à jour le mot de passe",
+        "reset": "Réinitialiser"
+      },
+      "inputs": {
+        "password": {
+          "label": "Nouveau mot de passe",
+          "placeholder": "Entrez votre nouveau mot de passe"
+        },
+        "confirmPassword": {
+          "label": "Confirmer le mot de passe",
+          "placeholder": "Confirmez votre nouveau mot de passe"
+        }
+      }
+    },
+    "profileForm": {
+      "title": "Informations du profil",
+      "description": "Mettez à jour vos informations personnelles et vos préférences e-mail.",
+      "inputs": {
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Entrez votre e-mail"
+        },
+        "name": {
+          "label": "Nom",
+          "placeholder": "Entrez votre nom"
+        }
+      },
+      "buttons": {
+        "cancel": "Réinitialiser",
+        "save": "Enregistrer les modifications"
+      }
+    },
+    "securityTab": {
+      "title": "Paramètres de sécurité",
+      "description": "Gérez votre mot de passe et vos préférences de sécurité pour protéger votre compte."
+    },
+    "inputsValidation": {
+      "invalidId": "ID invalide",
+      "requiredId": "L'ID est requis",
+      "invalidPassword": "Mot de passe invalide",
+      "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères",
+      "requiredPassword": "Le mot de passe est requis",
+      "passwordsDoNotMatch": "Les mots de passe ne correspondent pas",
+      "invalidEmail": "E-mail invalide",
+      "requiredEmail": "L'e-mail est requis",
+      "invalidName": "Nom invalide",
+      "requiredName": "Le nom est requis",
+      "nameMinLength": "Le nom doit contenir au moins 2 caractères"
+    }
+  },
+  "comments": {
+    "placeholder": "Ajouter un commentaire...",
+    "inputValidations": {
+      "invalidContent": "Contenu invalide",
+      "requiredContent": "Le contenu est requis",
+      "contentMinLength": "Le contenu doit contenir au moins 1 caractère",
+      "invalidTaskId": "ID de tâche invalide",
+      "requiredTaskId": "L'ID de tâche est requis"
+    },
+    "createComment": {
+      "error": "Erreur lors de la création du commentaire",
+      "success": "Commentaire créé avec succès"
+    },
+    "deleteComment": {
+      "error": "Erreur lors de la suppression du commentaire",
+      "success": "Commentaire supprimé avec succès"
+    }
+  },
+  "activityLogs": {
+    "commentDetails": {
+      "onTask": "Sur la tâche : {{taskTitle}}",
+      "created": "Créé",
+      "updated": "Mis à jour",
+      "edited": "modifié",
+      "deleted": "Supprimé",
+      "date": "le {{date}}"
+    },
+    "taskDetails": {
+      "status": {
+        "PENDING": "En attente",
+        "IN_PROGRESS": "En cours",
+        "COMPLETED": "Terminé"
+      },
+      "category": {
+        "WORK": "Travail",
+        "PERSONAL": "Personnel",
+        "OTHER": "Autre",
+        "LEARNING": "Apprentissage"
+      }
+    }
+  },
+  "users": {
+    "filters": "Filtres",
+    "sort": "Trier",
+    "clearFilters": "Effacer les filtres",
+    "createUser": "Créer un utilisateur",
+    "validation": {
+      "createUser": {
+        "error": "Erreur lors de la création de l'utilisateur",
+        "success": "Utilisateur créé avec succès"
+      },
+      "updateUser": {
+        "error": "Erreur lors de la mise à jour de l'utilisateur",
+        "success": "Utilisateur mis à jour avec succès"
+      },
+      "deleteUser": {
+        "error": "Erreur lors de la suppression de l'utilisateur",
+        "success": "Utilisateur supprimé avec succès",
+        "invalidUserId": "ID d'utilisateur invalide",
+        "requiredUserId": "L'ID d'utilisateur est requis"
+      }
+    },
+    "userItem": {
+      "delete": "Supprimer l'utilisateur",
+      "edit": "Modifier l'utilisateur",
+      "openMenu": "Ouvrir le menu"
+    },
+    "filterModal": {
+      "title": "Filtrer les utilisateurs",
+      "filters": "Filtres",
+      "inputs": {
+        "search": {
+          "label": "Recherche",
+          "placeholder": "Rechercher des utilisateurs..."
+        },
+        "role": {
+          "label": "Rôle",
+          "placeholder": "Sélectionner un rôle"
+        },
+        "status": {
+          "label": "Statut",
+          "placeholder": "Sélectionner un statut"
+        },
+        "dateRange": {
+          "label": "Plage de dates",
+          "placeholder": "Sélectionner une plage de dates"
+        }
+      },
+      "applyFilters": "Appliquer les filtres",
+      "cancel": "Annuler",
+      "clearFilters": "Effacer les filtres",
+      "sort": {
+        "label": "Trier",
+        "placeholder": "Sélectionner le tri",
+        "createdAt": {
+          "asc": "Date de création ↑",
+          "desc": "Date de création ↓"
+        },
+        "name": {
+          "asc": "Nom ↑",
+          "desc": "Nom ↓"
+        }
+      }
+    },
+    "createUserModal": {
+      "title": "Créer un utilisateur",
+      "description": "Créer un nouvel utilisateur",
+      "inputs": {
+        "name": {
+          "label": "Nom",
+          "placeholder": "Entrer le nom de l'utilisateur"
+        },
+        "email": {
+          "label": "E-mail",
+          "placeholder": "Entrer l'e-mail de l'utilisateur"
+        },
+        "role": {
+          "label": "Rôle",
+          "placeholder": "Sélectionner un rôle"
+        }
+      },
+      "buttons": {
+        "cancel": "Annuler",
+        "create": "Créer l'utilisateur"
+      }
+    },
+    "deleteUserAlert": {
+      "title": "Supprimer l'utilisateur",
+      "description": "Êtes-vous sûr de vouloir supprimer cet utilisateur ?",
+      "buttons": {
+        "cancel": "Annuler",
+        "delete": "Supprimer l'utilisateur"
+      }
+    },
+    "editUserModal": {
+      "title": "Modifier l'utilisateur",
+      "description": "Effectuez les modifications de l'utilisateur ici. Cliquez sur enregistrer une fois terminé.",
+      "buttons": {
+        "cancel": "Annuler",
+        "save": "Enregistrer les modifications"
+      }
+    },
+    "inputValidations": {
+      "invalidName": "Nom invalide",
+      "requiredName": "Le nom est requis",
+      "nameMinLength": "Le nom doit contenir au moins 2 caractères",
+      "invalidEmail": "E-mail invalide",
+      "requiredEmail": "L'e-mail est requis",
+      "invalidRole": "Rôle invalide",
+      "requiredRole": "Le rôle est requis",
+      "invalidId": "ID invalide",
+      "requiredId": "L'ID est requis"
+    }
+  },
+  "taskWebsockets": {
+    "taskCreated": "Créé",
+    "taskUpdated": "Mis à jour",
+    "taskDeleted": "Supprimé",
+    "taskReminder": "Rappel pour la tâche",
+    "viewTask": "Voir la tâche",
+    "hoursUntilDue": "{hours} heures jusqu'à l'échéance"
+  }
+}

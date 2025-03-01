@@ -1,0 +1,10 @@
+{
+  "title": "Rappel de tâche",
+  "greeting": "Bonjour, {{userName}}",
+  "reminder": "Cette tâche est importante {{taskTitle}} se termine dans {{hoursUntilDue}} heures.",
+  "completeTask": "Veuillez vous assurer de la terminer à temps ou de mettre à jour son statut si nécessaire.",
+  "viewTask": "Voir la tâche",
+  "ignore": "Si vous avez déjà terminé cette tâche, vous pouvez ignorer ce rappel.",
+  "footer": "Cette message est un message automatique de Task Manager. Veuillez ne pas répondre à cet email.",
+  "subject": "Rappel de tâche: \"{{taskTitle}}\" se termine dans {{hoursUntilDue}} heures"
+}

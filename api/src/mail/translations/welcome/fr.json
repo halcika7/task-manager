@@ -1,0 +1,20 @@
+{
+  "welcomeHeader": "Bienvenue sur Task Manager !",
+  "greeting": "Bonjour",
+  "important": "Important :",
+  "temporaryPasswordNotice": "Un compte a été créé pour vous. Veuillez utiliser le mot de passe temporaire suivant pour vous connecter :",
+  "passwordChangeNotice": "Pour des raisons de sécurité, vous devrez changer votre mot de passe lors de votre première connexion.",
+  "welcomeMessage": "Bienvenue sur Task Manager ! Nous sommes ravis de vous avoir parmi nous. Voici ce que vous pouvez faire avec notre plateforme :",
+  "features": {
+    "createTasks": "Créer et gérer des tâches",
+    "setDueDates": "Définir des échéances et des rappels",
+    "collaborate": "Collaborer avec les membres de l'équipe",
+    "trackProgress": "Suivre l'avancement des tâches",
+    "organize": "Organiser les tâches par catégories"
+  },
+  "getStartedWithPassword": "Après avoir changé votre mot de passe, vous pourrez créer votre première tâche :",
+  "getStarted": "Commencez par créer votre première tâche :",
+  "createTaskButton": "Créer une tâche",
+  "supportMessage": "Si vous avez des questions, n'hésitez pas à contacter notre équipe de support.",
+  "footerText": "Vous recevez cet e-mail car vous vous êtes inscrit sur Task Manager."
+}

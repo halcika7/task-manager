@@ -1,0 +1,9 @@
+{
+  "subject": "Resetovanje lozinke",
+  "greeting": "Zdravo",
+  "message": "Primili smo zahtjev za resetovanje vaše lozinke. Kliknite na dugme ispod da kreirate novu lozinku:",
+  "buttonText": "Resetuj lozinku",
+  "expirationNotice": "Ovaj link za resetovanje lozinke ističe za 60 minuta.",
+  "ignoreMessage": "Ako niste zatražili resetovanje lozinke, možete slobodno ignorisati ovaj email.",
+  "footerText": "Ovo je automatska poruka, molimo ne odgovarajte na ovaj email."
+}

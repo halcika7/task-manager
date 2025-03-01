@@ -1,0 +1,10 @@
+{
+  "title": "Aufgaben-Erinnerung",
+  "greeting": "Hallo, {{userName}}",
+  "reminder": "Dies ist eine Erinnerung an Ihre Aufgabe {{taskTitle}}, die in {{hoursUntilDue}} Stunden abläuft.",
+  "completeTask": "Bitte stellen Sie sicher, dass Sie sie in der Frist erledigen oder ihren Status aktualisieren, falls erforderlich.",
+  "viewTask": "Aufgabe ansehen",
+  "ignore": "Wenn Sie diese Aufgabe bereits abgeschlossen haben, können Sie diese Erinnerung ignorieren.",
+  "footer": "Dies ist eine automatisch generierte Nachricht von Task Manager. Bitte antworten Sie nicht auf diese E-Mail.",
+  "subject": "Aufgaben-Erinnerung: \"{{taskTitle}}\" abläuft in {{hoursUntilDue}} Stunden"
+}

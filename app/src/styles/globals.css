@@ -1,0 +1,207 @@
+@import 'tailwindcss';
+/*
+  ---break---
+*/
+@plugin 'tailwindcss-animate';
+/*
+  ---break---
+*/
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+/*
+  ---break---
+*/
+:root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(248 47% 11%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(248 47% 11%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(248 47% 11%);
+  --primary: hsl(255 85% 60%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(255 50% 96%);
+  --secondary-foreground: hsl(255 85% 60%);
+  --muted: hsl(255 50% 96%);
+  --muted-foreground: hsl(248 30% 45%);
+  --accent: hsl(230 75% 60%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(255 30% 93%);
+  --input: hsl(255 30% 93%);
+  --ring: hsl(255 85% 60%);
+  --ring-hover: hsl(255 85% 55%);
+  --ring-offset: hsl(0 0% 100%);
+  --ring-offset-dark: hsl(248 47% 11%);
+  --outline-hover: hsl(255 85% 97%);
+  --outline-hover-dark: hsl(255 85% 20%);
+  --chart-1: hsl(255 85% 60%);
+  --chart-2: hsl(280 60% 60%);
+  --chart-3: hsl(230 70% 60%);
+  --chart-4: hsl(305 60% 60%);
+  --chart-5: hsl(195 65% 55%);
+  --radius: 0.6rem;
+  --sidebar: hsl(255 30% 98%);
+  --sidebar-foreground: hsl(248 47% 11%);
+  --sidebar-primary: hsl(255 85% 60%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(255 30% 96%);
+  --sidebar-accent-foreground: hsl(248 47% 11%);
+  --sidebar-border: hsl(255 30% 93%);
+  --sidebar-ring: hsl(255 85% 60%);
+}
+/*
+  ---break---
+*/
+.dark {
+  --background: hsl(248 35% 11%);
+  --foreground: hsl(255 30% 98%);
+  --card: hsl(248 35% 11%);
+  --card-foreground: hsl(255 30% 98%);
+  --popover: hsl(248 35% 11%);
+  --popover-foreground: hsl(255 30% 98%);
+  --primary: hsl(255 85% 70%);
+  --primary-foreground: hsl(0 0% 100%);
+  --secondary: hsl(248 35% 20%);
+  --secondary-foreground: hsl(255 30% 98%);
+  --muted: hsl(248 35% 20%);
+  --muted-foreground: hsl(248 20% 75%);
+  --accent: hsl(230 75% 65%);
+  --accent-foreground: hsl(0 0% 100%);
+  --destructive: hsl(0 84% 60%);
+  --destructive-foreground: hsl(0 0% 100%);
+  --border: hsl(248 35% 20%);
+  --input: hsl(248 35% 20%);
+  --ring: hsl(255 85% 70%);
+  --ring-hover: hsl(255 85% 75%);
+  --ring-offset: hsl(248 35% 11%);
+  --ring-offset-dark: hsl(248 35% 11%);
+  --outline-hover: hsl(255 85% 25%);
+  --outline-hover-dark: hsl(255 85% 90%);
+  --chart-1: hsl(255 85% 70%);
+  --chart-2: hsl(280 60% 65%);
+  --chart-3: hsl(230 70% 65%);
+  --chart-4: hsl(305 60% 65%);
+  --chart-5: hsl(195 65% 60%);
+  --sidebar: hsl(248 40% 9%);
+  --sidebar-foreground: hsl(255 30% 98%);
+  --sidebar-primary: hsl(255 85% 70%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(248 40% 12%);
+  --sidebar-accent-foreground: hsl(255 30% 98%);
+  --sidebar-border: hsl(248 40% 16%);
+  --sidebar-ring: hsl(255 85% 70%);
+}
+/*
+  ---break---
+*/
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+  /*
+  ---break---
+*/
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  /*
+  ---break---
+*/
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-50% - 0.5rem));
+    }
+  }
+
+  /* animation scroll */
+}
+/*
+  ---break---
+*/
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

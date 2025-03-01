@@ -1,0 +1,20 @@
+{
+  "welcomeHeader": "Welcome to Task Manager!",
+  "greeting": "Hi",
+  "important": "Important:",
+  "temporaryPasswordNotice": "An account has been created for you. Please use the following temporary password to log in:",
+  "passwordChangeNotice": "For security reasons, you will be required to change your password when you first log in.",
+  "welcomeMessage": "Welcome to Task Manager! We're excited to have you on board. Here are some things you can do with our platform:",
+  "features": {
+    "createTasks": "Create and manage tasks",
+    "setDueDates": "Set due dates and reminders",
+    "collaborate": "Collaborate with team members",
+    "trackProgress": "Track task progress",
+    "organize": "Organize tasks by categories"
+  },
+  "getStartedWithPassword": "After changing your password, you can create your first task:",
+  "getStarted": "Get started by creating your first task:",
+  "createTaskButton": "Create Task",
+  "supportMessage": "If you have any questions, feel free to reach out to our support team.",
+  "footerText": "You're receiving this email because you signed up for Task Manager."
+}
