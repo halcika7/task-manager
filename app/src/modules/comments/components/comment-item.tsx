@@ -38,7 +38,7 @@ export default function CommentItem(comment: Comment) {
             </p>
           </div>
         </div>
-        {user?.id === comment.user.id && (
+        {user?.id === comment.userId && (
           <Button size="sm" variant="destructive" onClick={deleteComment}>
             <Trash2Icon className="size-4" />
           </Button>

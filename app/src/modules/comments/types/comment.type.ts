@@ -7,4 +7,5 @@ export type Comment = {
   updatedAt: Date;
   user: User;
   taskId: string;
+  userId: string;
 };

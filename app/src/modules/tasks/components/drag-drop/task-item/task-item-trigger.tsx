@@ -13,7 +13,7 @@ export default function TaskItemTrigger({ isOpen, ...props }: Props) {
     <Button
       variant="ghost"
       className={cn(
-        'hover:bg-accent/10 -mt-2.5 -mr-2.5 h-8 w-8 p-0 opacity-0 transition-all group-hover:opacity-100 group-focus:opacity-100',
+        'hover:bg-accent/10 -mt-2.5 -mr-2.5 h-8 w-8 p-0 transition-all group-hover:opacity-100 group-focus:opacity-100 sm:opacity-0',
         {
           'bg-accent/10 opacity-100': isOpen,
         }

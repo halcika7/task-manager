@@ -102,7 +102,7 @@ export default function CreateTaskModal() {
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(handleSubmit)}>
-            <div className="grid gap-4 py-4">
+            <div className="mb-4 grid max-h-[50vh] gap-4 overflow-y-auto py-4">
               <FormInput
                 label={t('createTaskModal.inputs.title.label')}
                 name="title"

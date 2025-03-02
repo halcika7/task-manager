@@ -5,7 +5,7 @@ import { createContext } from 'react';
 import type { User } from '@/modules/users/types/user.type';
 
 interface AuthContextType {
-  user: User | null;
+  user?: User | null;
   logout: () => Promise<void>;
 }
 

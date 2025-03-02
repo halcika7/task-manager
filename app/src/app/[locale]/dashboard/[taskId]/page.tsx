@@ -61,7 +61,7 @@ export default async function Page({ params }: Props) {
       <div className="container max-w-5xl space-y-8 py-8">
         <Card className="from-background to-background/30 overflow-hidden bg-gradient-to-b">
           <CardHeader className="space-y-4 p-6">
-            <div className="flex items-start justify-between gap-4">
+            <div className="flex flex-wrap items-start justify-between gap-4">
               <div className="space-y-1.5">
                 <div className="flex items-center gap-2">
                   <Badge

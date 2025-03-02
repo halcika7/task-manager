@@ -125,7 +125,7 @@ export function CreateUserModal({ open, onClose }: Props) {
                 />
               </div>
             </div>
-            <DialogFooter className="flex items-center gap-2 border-t p-4 sm:justify-end">
+            <DialogFooter className="flex flex-row items-center justify-end gap-2 border-t p-4 sm:justify-end">
               <Button variant="destructive" size="sm" onClick={onClose}>
                 {t('createUserModal.buttons.cancel')}
               </Button>

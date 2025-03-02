@@ -129,7 +129,7 @@ export function ActivityLogFilterModal({ onClose, open }: Props) {
                 />
               </div>
             </div>
-            <DialogFooter className="flex items-center border-t p-4 sm:justify-between">
+            <DialogFooter className="flex flex-row items-center justify-end gap-2 border-t p-4 sm:justify-end">
               {activeFiltersCount > 0 ? (
                 <Button
                   variant="ghost"

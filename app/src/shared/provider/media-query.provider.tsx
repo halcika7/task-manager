@@ -25,11 +25,12 @@ const MediaQueryContext = createContext<MediaQueryContextType | undefined>(
 
 type Props = Readonly<{
   children: ReactNode;
+  initialDeviceType?: DeviceType;
 }>;
 
-function MediaQueryProvider({ children }: Props) {
+function MediaQueryProvider({ children, initialDeviceType }: Props) {
   const getDeviceType = useCallback((): DeviceType => {
-    if (typeof window === 'undefined') return 'desktop';
+    if (typeof window === 'undefined') return initialDeviceType;
 
     const mobileQuery = window.matchMedia('(max-width: 639px)');
     const tabletQuery = window.matchMedia(
@@ -39,9 +40,10 @@ function MediaQueryProvider({ children }: Props) {
     if (mobileQuery.matches) return 'mobile';
     if (tabletQuery.matches) return 'tablet';
     return 'desktop';
-  }, []);
+  }, [initialDeviceType]);
 
-  const [deviceType, setDeviceType] = useState<DeviceType>(getDeviceType());
+  const [deviceType, setDeviceType] = useState<DeviceType>(initialDeviceType);
+  const [isClient, setIsClient] = useState(false);
 
   const value = useMemo(
     () => ({
@@ -55,6 +57,7 @@ function MediaQueryProvider({ children }: Props) {
   );
 
   useEffect(() => {
+    setIsClient(true);
     const mobileQuery = window.matchMedia('(max-width: 639px)');
     const tabletQuery = window.matchMedia(
       '(min-width: 640px) and (max-width: 1023px)'
@@ -74,7 +77,12 @@ function MediaQueryProvider({ children }: Props) {
     };
   }, [getDeviceType]);
 
-  return <MediaQueryContext value={value}>{children}</MediaQueryContext>;
+  return (
+    <MediaQueryContext.Provider value={value}>
+      {/* Only render children after hydration to prevent mismatch */}
+      {isClient ? children : null}
+    </MediaQueryContext.Provider>
+  );
 }
 
 export { MediaQueryContext, MediaQueryProvider };

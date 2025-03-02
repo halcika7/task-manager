@@ -115,7 +115,7 @@ export function UserFilterModal({ onClose, open }: Props) {
                 }}
               />
             </div>
-            <DialogFooter className="flex items-center border-t p-4 sm:justify-between">
+            <DialogFooter className="flex flex-row items-center justify-end border-t p-4 sm:justify-end">
               {activeFiltersCount > 0 ? (
                 <Button
                   variant="ghost"

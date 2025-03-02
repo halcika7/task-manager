@@ -1,5 +1,6 @@
 'use client';
 
+import { XIcon } from 'lucide-react';
 import { m } from 'motion/react';
 import { useTranslations } from 'next-intl';
 
@@ -12,6 +13,7 @@ import {
   Sheet,
   SheetClose,
   SheetContent,
+  SheetDescription,
   SheetHeader,
   SheetTitle,
   SheetTrigger,
@@ -55,8 +57,14 @@ export default function MobileNav({ user }: Props) {
         side="left"
         className="bg-background/80 flex w-full flex-col backdrop-blur-xl sm:max-w-sm"
       >
-        <SheetHeader className="border-b pb-4">
+        <SheetDescription className="sr-only">{t('menu')}</SheetDescription>
+        <SheetHeader className="flex flex-row items-center justify-between border-b pb-4">
           <SheetTitle className="text-2xl font-bold">{t('menu')}</SheetTitle>
+          <SheetClose asChild>
+            <Button variant="ghost" size="icon">
+              <XIcon className="size-4" />
+            </Button>
+          </SheetClose>
         </SheetHeader>
         <nav className="flex-1 space-y-2">
           <m.div

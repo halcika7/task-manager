@@ -1,4 +1,5 @@
-import { type NextRequest, NextResponse } from 'next/server';
+import type { NextRequest } from 'next/server';
+import { NextResponse } from 'next/server';
 import createIntlMiddleware from 'next-intl/middleware';
 
 import {
@@ -7,6 +8,7 @@ import {
   shouldRefreshToken,
 } from '@/modules/auth/lib/session';
 import { routing } from '@/modules/i18n/routing';
+import { DEVICE_TYPE_COOKIE } from '@/shared/constants';
 import { httpClient } from '@/shared/lib/http-client';
 
 // Create intl middleware
@@ -42,6 +44,19 @@ const createResponse = async (
 
   return response;
 };
+
+const COOKIE_MAX_AGE = 60 * 60 * 24 * 7; // 7 days
+
+function getDeviceType(userAgent: string): 'mobile' | 'tablet' | 'desktop' {
+  // Regex patterns for device detection
+  const mobilePattern =
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i;
+  const tabletPattern = /iPad|Android(?!.*Mobile)|Tablet/i;
+
+  if (tabletPattern.test(userAgent)) return 'tablet';
+  if (mobilePattern.test(userAgent)) return 'mobile';
+  return 'desktop';
+}
 
 export default async function middleware(req: NextRequest) {
   const { pathname, origin } = req.nextUrl;
@@ -103,6 +118,19 @@ export default async function middleware(req: NextRequest) {
   const rsp = withIntl(req);
 
   await applySession(rsp, sessionObject);
+
+  const currentDeviceType = req.cookies.get(DEVICE_TYPE_COOKIE)?.value;
+  const userAgent = req.headers.get('user-agent') || '';
+  const deviceType = getDeviceType(userAgent);
+
+  // Only set the cookie if it doesn't exist or is different
+  if (deviceType !== currentDeviceType) {
+    rsp.cookies.set(DEVICE_TYPE_COOKIE, deviceType, {
+      path: '/',
+      maxAge: COOKIE_MAX_AGE,
+      sameSite: 'lax',
+    });
+  }
 
   return rsp;
 }

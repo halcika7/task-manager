@@ -86,7 +86,7 @@ export function TaskFilterModal({ onClose, open }: Props) {
         </DialogHeader>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(applyFilters)}>
-            <div className="space-y-6 overflow-y-auto scroll-smooth p-6">
+            <div className="max-h-[50vh] space-y-6 overflow-y-auto scroll-smooth p-6">
               <div className="space-y-4">
                 <FormInput
                   name="search"
@@ -143,7 +143,7 @@ export function TaskFilterModal({ onClose, open }: Props) {
                 />
               </div>
             </div>
-            <DialogFooter className="flex items-center border-t p-4 sm:justify-between">
+            <DialogFooter className="flex flex-row items-center justify-end gap-2 border-t p-4 sm:justify-end">
               {activeFiltersCount > 0 ? (
                 <Button
                   variant="ghost"
