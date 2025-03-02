@@ -32,6 +32,7 @@ import {
   DialogTitle,
 } from '@/shared/components/ui/dialog';
 import { Form } from '@/shared/components/ui/form';
+import { revalidateDashboard } from '@/shared/utils/revalidate-dashboard';
 
 interface Props {
   open: boolean;
@@ -61,19 +62,21 @@ export function TaskFilterModal({ onClose, open }: Props) {
   });
 
   const applyFilters = useCallback(
-    (data: FormData) => {
-      setSearchParams({
+    async (data: FormData) => {
+      await setSearchParams({
         ...data,
         dateFrom: data.dateRange.from?.toISOString() ?? null,
         dateTo: data.dateRange.to?.toISOString() ?? null,
       });
+      await revalidateDashboard();
       onClose();
     },
     [onClose, setSearchParams]
   );
 
-  const clearFilters = useCallback(() => {
-    setSearchParams(emptyTasksSearchParams);
+  const clearFilters = useCallback(async () => {
+    await setSearchParams(emptyTasksSearchParams);
+    await revalidateDashboard();
     onClose();
   }, [onClose, setSearchParams]);
 
@@ -150,6 +153,7 @@ export function TaskFilterModal({ onClose, open }: Props) {
                   size="sm"
                   className="text-muted-foreground hover:text-foreground"
                   onClick={clearFilters}
+                  type="button"
                 >
                   {t('clearFilters')}
                 </Button>

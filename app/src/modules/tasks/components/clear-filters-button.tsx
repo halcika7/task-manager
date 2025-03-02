@@ -11,6 +11,7 @@ import {
   tasksSearchParams,
 } from '@/modules/tasks/utils/search-tasks-params';
 import { Button } from '@/shared/components/ui/button';
+import { revalidateDashboard } from '@/shared/utils/revalidate-dashboard';
 
 export default function ClearFiltersButton() {
   const [, setSearchParams] = useQueryStates(tasksSearchParams, {
@@ -21,6 +22,7 @@ export default function ClearFiltersButton() {
   const t = useTranslations('tasks.filterModal');
 
   const clearFilters = useCallback(async () => {
+    await revalidateDashboard();
     await setSearchParams(emptyTasksSearchParams);
   }, [setSearchParams]);
 
@@ -34,6 +36,7 @@ export default function ClearFiltersButton() {
       size="sm"
       className="text-muted-foreground hover:text-foreground h-9 px-2"
       onClick={clearFilters}
+      type="button"
     >
       <X className="mr-2 h-4 w-4" />
       {t('clearFilters')}

@@ -168,6 +168,7 @@ export default function CreateTaskModal() {
                 variant="outline"
                 onClick={handleClose}
                 disabled={isPending}
+                type="button"
               >
                 {t('createTaskModal.buttons.cancel')}
               </Button>

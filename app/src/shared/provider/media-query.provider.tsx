@@ -25,7 +25,7 @@ const MediaQueryContext = createContext<MediaQueryContextType | undefined>(
 
 type Props = Readonly<{
   children: ReactNode;
-  initialDeviceType?: DeviceType;
+  initialDeviceType: DeviceType;
 }>;
 
 function MediaQueryProvider({ children, initialDeviceType }: Props) {

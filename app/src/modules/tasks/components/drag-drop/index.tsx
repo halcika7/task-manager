@@ -9,7 +9,7 @@ import {
   useSensors,
 } from '@dnd-kit/core';
 import { sortableKeyboardCoordinates } from '@dnd-kit/sortable';
-import { useId, useMemo } from 'react';
+import { memo, useId, useMemo } from 'react';
 
 import TaskColumn from '@/modules/tasks/components/drag-drop/column';
 import useDragDrop from '@/modules/tasks/components/drag-drop/use-drag-drop';
@@ -20,8 +20,9 @@ type Props = Readonly<{
   tasks: TasksResponse | null;
 }>;
 
-export default function DragDrop({ tasks: initialTasks }: Props) {
+function DragDrop({ tasks: initialTasks }: Props) {
   const id = useId();
+
   const { columns, handleDragOver, handleDragEnd } = useDragDrop(initialTasks);
 
   // Sensors configuration
@@ -50,7 +51,6 @@ export default function DragDrop({ tasks: initialTasks }: Props) {
         onDragOver={handleDragOver}
         onDragEnd={handleDragEnd}
         id={id}
-        autoScroll
       >
         <div className="flex h-full gap-4">
           <TaskColumn
@@ -74,3 +74,13 @@ export default function DragDrop({ tasks: initialTasks }: Props) {
     </div>
   );
 }
+
+export default memo(DragDrop, (prevProps, nextProps) => {
+  // If both are null, they're equal
+  if (!prevProps.tasks && !nextProps.tasks) return true;
+  // If one is null and other isn't, they're not equal
+  if (!prevProps.tasks || !nextProps.tasks) return false;
+
+  // Deep comparison of tasks
+  return JSON.stringify(prevProps.tasks) === JSON.stringify(nextProps.tasks);
+});

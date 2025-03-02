@@ -1,7 +1,5 @@
 'use server';
 
-// import { revalidatePath } from 'next/cache';
-
 import type { CreateCommentSchema } from '@/modules/comments/actions/create-comment/create-comment-schema';
 import { createCommentSchema } from '@/modules/comments/actions/create-comment/create-comment-schema';
 import type { Comment } from '@/modules/comments/types/comment.type';

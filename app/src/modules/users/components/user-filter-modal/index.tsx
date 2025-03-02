@@ -35,7 +35,7 @@ export function UserFilterModal({ onClose, open }: Props) {
   const t = useTranslations('users');
   const [searchParams, setSearchParams] = useQueryStates(usersSearchParams, {
     shallow: false,
-    history: 'replace',
+    history: 'push',
   });
   const form = useForm({
     defaultValues: {
@@ -64,10 +64,14 @@ export function UserFilterModal({ onClose, open }: Props) {
 
   const clearFilters = useCallback(() => {
     setSearchParams({
-      page: 1,
-      limit: 10,
-      orderBy: 'createdAt',
-      orderDir: 'desc',
+      page: null,
+      limit: null,
+      orderBy: null,
+      orderDir: null,
+      role: null,
+      search: null,
+      dateFrom: null,
+      dateTo: null,
     });
     onClose();
   }, [onClose, setSearchParams]);
@@ -122,6 +126,7 @@ export function UserFilterModal({ onClose, open }: Props) {
                   size="sm"
                   className="text-muted-foreground hover:text-foreground"
                   onClick={clearFilters}
+                  type="button"
                 >
                   {t('filterModal.buttons.clearFilters')}
                 </Button>
@@ -130,7 +135,12 @@ export function UserFilterModal({ onClose, open }: Props) {
               )}
               <div className="flex gap-2">
                 <DialogClose asChild>
-                  <Button variant="destructive" size="sm" onClick={onClose}>
+                  <Button
+                    variant="destructive"
+                    size="sm"
+                    onClick={onClose}
+                    type="button"
+                  >
                     {t('filterModal.buttons.cancel')}
                   </Button>
                 </DialogClose>

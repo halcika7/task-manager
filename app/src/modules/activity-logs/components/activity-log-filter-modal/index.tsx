@@ -136,6 +136,7 @@ export function ActivityLogFilterModal({ onClose, open }: Props) {
                   size="sm"
                   className="text-muted-foreground hover:text-foreground"
                   onClick={clearFilters}
+                  type="button"
                 >
                   {t('clearFilters')}
                 </Button>
@@ -144,7 +145,12 @@ export function ActivityLogFilterModal({ onClose, open }: Props) {
               )}
               <div className="flex gap-2">
                 <DialogClose asChild>
-                  <Button variant="destructive" size="sm" onClick={onClose}>
+                  <Button
+                    variant="destructive"
+                    size="sm"
+                    onClick={onClose}
+                    type="button"
+                  >
                     {t('cancel')}
                   </Button>
                 </DialogClose>
