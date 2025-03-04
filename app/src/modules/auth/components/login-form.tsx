@@ -9,7 +9,6 @@ import { useForm } from 'react-hook-form';
 import { loginServerAction } from '@/modules/auth/actions/login/login.action';
 import type { LoginSchema } from '@/modules/auth/actions/login/login.schema';
 import { loginSchema } from '@/modules/auth/actions/login/login.schema';
-import { createSession } from '@/modules/auth/lib/session';
 import FormInput from '@/shared/components/form/input';
 import { Button } from '@/shared/components/ui/button';
 import { Form } from '@/shared/components/ui/form';
@@ -42,15 +41,12 @@ export function LoginForm() {
           return;
         }
 
-        if (result.message) {
+        if (result.message && !result.success) {
           form.setError('email', { message: result.message });
           return;
         }
 
-        if (result.session) {
-          await createSession(result.session);
-          router.replace('/dashboard');
-        }
+        router.replace('/dashboard');
       });
     },
     [startTransition, router, form]

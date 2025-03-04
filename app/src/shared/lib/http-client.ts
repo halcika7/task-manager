@@ -1,8 +1,8 @@
-import { getSession } from '@/modules/auth/lib/session';
+import { getSession } from '@/modules/auth/actions/get-session';
+import { logoutAction } from '@/modules/auth/actions/logout.action';
+import { updateSession } from '@/modules/auth/actions/update-session';
 import { getUserLocale } from '@/modules/i18n/lib/locale-cookie';
 import { BACKEND_URL } from '@/shared/constants';
-import { logout } from '@/shared/lib/logout';
-import { updateTokens } from '@/shared/lib/update-tokens';
 
 export type HttpClientResponse<T> =
   | {
@@ -28,16 +28,15 @@ class HttpClient {
   }
 
   async refreshToken(
-    refresh?: string
+    refresh?: string,
+    withUpdateSession = true
   ): Promise<{ accessToken: string; refreshToken: string } | null> {
     try {
-      const locale = await getUserLocale();
       const response = await fetch(`${this.baseUrl}/auth/refresh`, {
         method: 'POST',
         credentials: 'include',
         headers: {
           'Content-Type': 'application/json',
-          'Accept-Language': locale,
         },
         body: JSON.stringify({ refresh }),
       });
@@ -48,14 +47,11 @@ class HttpClient {
 
       const data = await response.json();
 
-      const updatedTokens = await updateTokens(
-        data.accessToken,
-        data.refreshToken,
-        locale
-      );
-
-      if (!updatedTokens.ok) {
-        throw new Error('Failed to update tokens');
+      if (withUpdateSession) {
+        await updateSession({
+          token: data?.accessToken,
+          refresh_token: data?.refreshToken,
+        });
       }
 
       return {
@@ -86,7 +82,7 @@ class HttpClient {
 
     if (!('Authorization' in headers)) {
       (headers as Record<string, string>).Authorization =
-        `Bearer ${session?.accessToken}`;
+        `Bearer ${session?.user?.token}`;
     }
 
     const optionsWithCredentials: RequestInit = {
@@ -100,10 +96,10 @@ class HttpClient {
 
       // Only attempt token refresh for non-refresh endpoints
       if (response.status === 401 && !retry) {
-        const refreshed = await this.refreshToken(session?.refreshToken);
+        const refreshed = await this.refreshToken(session?.user?.refresh_token);
 
         if (!refreshed?.accessToken || !refreshed?.refreshToken) {
-          await logout();
+          await logoutAction();
           throw new Error('Authentication failed');
         }
 

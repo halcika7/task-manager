@@ -2,7 +2,8 @@ import dynamic from 'next/dynamic';
 import { redirect } from 'next/navigation';
 import type { ReactNode } from 'react';
 
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
+import type { User } from '@/modules/users/types/user.type';
 import { AppHeader } from '@/shared/components/app-header';
 import { SidebarInset, SidebarProvider } from '@/shared/components/ui/sidebar';
 import { SocketProvider } from '@/shared/provider/socket.provider';
@@ -16,15 +17,15 @@ type Props = Readonly<{
 }>;
 
 export default async function DashboardLayout({ children }: Props) {
-  const session = await getSession();
+  const session = await auth();
 
-  if (!session) {
+  if (!session?.user) {
     redirect('/auth/login');
   }
 
   return (
     <SidebarProvider>
-      <AppSidebar user={session.user} />
+      <AppSidebar user={session.user as unknown as User} />
       <SidebarInset className="space-y-4 overflow-x-hidden p-4">
         <SocketProvider session={session}>
           <AppHeader />

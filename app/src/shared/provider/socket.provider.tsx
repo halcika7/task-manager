@@ -1,10 +1,10 @@
 'use client';
 
+import type { Session } from 'next-auth';
 import type { ReactNode } from 'react';
 import { createContext, useState } from 'react';
 import type { Socket } from 'socket.io-client';
 
-import type { Session } from '@/modules/auth/lib/session';
 import { socketService } from '@/shared/lib/socket';
 
 interface SocketProviderProps {

@@ -1,7 +1,8 @@
 'use server';
 
 import { revalidatePath } from 'next/cache';
-import { updateSession } from '@/modules/auth/lib/session';
+
+import { updateSession } from '@/modules/auth/actions/update-session';
 import { updateProfileSchema } from '@/modules/profile/actions/update-profile.schema';
 import type { User } from '@/modules/users/types/user.type';
 import { httpClient } from '@/shared/lib/http-client';
@@ -24,7 +25,9 @@ export const updateProfile = async (formData: FormData) => {
       return { error: 'validation.updateProfile.error' };
     }
 
-    await updateSession(response.data);
+    await updateSession({
+      user: response.data,
+    });
 
     revalidatePath('/dashboard/profile', 'page');
     return { success: true };

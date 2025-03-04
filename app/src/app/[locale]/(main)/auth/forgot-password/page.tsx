@@ -3,8 +3,7 @@ import dynamic from 'next/dynamic';
 
 import { redirect } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
-// import { ForgotPasswordForm } from '@/modules/auth/components/forgot-password-form';
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
 import { LocaleLink } from '@/modules/i18n/routing';
 import {
   Card,
@@ -28,7 +27,7 @@ export const metadata: Metadata = {
 
 export default async function ForgotPasswordPage() {
   const [session, t] = await Promise.all([
-    getSession(),
+    auth(),
     getTranslations('auth.forgot_password'),
   ]);
 

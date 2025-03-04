@@ -1,14 +1,7 @@
 'use server';
 
 import { loginSchema } from '@/modules/auth/actions/login/login.schema';
-import type { User } from '@/modules/users/types/user.type';
-import { httpClient } from '@/shared/lib/http-client';
-
-type LoginResponse = User & {
-  locale: string;
-  accessToken: string;
-  refreshToken: string;
-};
+import { signIn } from '@/modules/auth/lib';
 
 export const loginServerAction = async (formData: FormData) => {
   const validatedFields = loginSchema.safeParse({
@@ -23,23 +16,15 @@ export const loginServerAction = async (formData: FormData) => {
   const { email, password } = validatedFields.data;
 
   try {
-    const response = await httpClient.post<LoginResponse>('/auth/login', {
+    await signIn('credentials', {
       email,
       password,
+      redirect: false,
     });
 
-    if (response.error || !response.data) {
-      return { message: 'auth.login.invalid_credentials' };
-    }
-
-    const user = response.data;
-
     return {
-      session: {
-        user: user,
-        accessToken: user.accessToken,
-        refreshToken: user.refreshToken,
-      },
+      message: 'auth.login.success',
+      success: true,
     };
   } catch {
     return {

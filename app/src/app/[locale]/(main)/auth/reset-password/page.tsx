@@ -3,7 +3,7 @@ import { redirect, RedirectType } from 'next/navigation';
 
 import { getTranslations } from 'next-intl/server';
 import { ResetPasswordForm } from '@/modules/auth/components/reset-password-form';
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
 import { LocaleLink } from '@/modules/i18n/routing';
 import {
   Card,
@@ -32,7 +32,7 @@ export default async function ResetPasswordPage({ searchParams }: Props) {
     redirect('/auth/forgot-password', RedirectType.replace);
   }
 
-  const [session, t] = await Promise.all([getSession(), getTranslations()]);
+  const [session, t] = await Promise.all([auth(), getTranslations()]);
 
   if (session?.user) {
     redirect('/dashboard', RedirectType.replace);

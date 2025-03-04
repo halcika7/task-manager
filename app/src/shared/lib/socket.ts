@@ -1,7 +1,7 @@
+import type { Session } from 'next-auth';
 import type { Socket } from 'socket.io-client';
 import { io } from 'socket.io-client';
 
-import type { Session } from '@/modules/auth/lib/session';
 import type { Comment } from '@/modules/comments/types/comment.type';
 import type { Task } from '@/modules/tasks/types/task.type';
 import { BACKEND_URL } from '@/shared/constants';
@@ -38,12 +38,12 @@ class SocketService {
       return;
     }
 
-    this.accessToken = session.accessToken;
+    this.accessToken = session.token;
 
     this.socket = io(BACKEND_URL?.replace('/api', ''), {
       auth: {
         token: this.accessToken,
-        userId: session.user.id,
+        userId: session.user?.id || '',
       },
       extraHeaders: {
         Authorization: `Bearer ${this.accessToken}`,

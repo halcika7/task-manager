@@ -4,8 +4,9 @@ import NextTopLoader from 'nextjs-toploader';
 import { NuqsAdapter } from 'nuqs/adapters/next/app';
 import type { ReactNode } from 'react';
 
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
 import { AuthProvider } from '@/modules/auth/provider/auth.provider';
+import type { User } from '@/modules/users/types/user.type';
 import { Toaster } from '@/shared/components/ui/sonner';
 import { DEVICE_TYPE_COOKIE } from '@/shared/constants';
 import FramerProvider from '@/shared/provider/framer.provider';
@@ -22,7 +23,7 @@ type Props = Readonly<{
 
 export default async function RootLayout({ children }: Props) {
   const [session, locale, cookie] = await Promise.all([
-    getSession(),
+    auth(),
     getLocale(),
     cookies(),
   ]);
@@ -42,7 +43,7 @@ export default async function RootLayout({ children }: Props) {
                 enableSystem
                 disableTransitionOnChange
               >
-                <AuthProvider session={session?.user}>
+                <AuthProvider session={session?.user as unknown as User}>
                   <FramerProvider>{children}</FramerProvider>
                   <Toaster />
                 </AuthProvider>

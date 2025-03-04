@@ -5,7 +5,7 @@ import { getTranslations } from 'next-intl/server';
 
 import GoogleLogin from '@/modules/auth/components/google';
 import { SignUpForm } from '@/modules/auth/components/sign-up-form';
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
 import { LocaleLink } from '@/modules/i18n/routing';
 import {
   Card,
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 
 export default async function SignUpPage() {
   const [session, t] = await Promise.all([
-    getSession(),
+    auth(),
     getTranslations('auth.register'),
   ]);
 

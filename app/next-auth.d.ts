@@ -6,6 +6,7 @@ declare module 'next-auth' {
     email?: string | null;
     image?: string | null;
     emailVerified?: boolean;
+    role?: string;
   }
 
   interface User {
@@ -13,6 +14,7 @@ declare module 'next-auth' {
     refresh_token: string;
     user: AdapterUser;
     emailVerified?: boolean;
+    role?: string;
   }
 
   interface DefaultSession {
@@ -25,6 +27,13 @@ declare module 'next-auth' {
     refresh_token: string;
     error?: string;
   }
+
+  interface JWT {
+    token: string;
+    refresh_token?: string;
+    error?: string;
+    role?: string;
+  }
 }
 
 declare module 'next-auth/jwt' {
@@ -32,5 +41,6 @@ declare module 'next-auth/jwt' {
     token: string;
     refresh_token?: string;
     error?: string;
+    role?: string;
   }
 }

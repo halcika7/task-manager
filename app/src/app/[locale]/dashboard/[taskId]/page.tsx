@@ -3,7 +3,7 @@ import dynamic from 'next/dynamic';
 import { notFound, redirect } from 'next/navigation';
 
 import { getTranslations } from 'next-intl/server';
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
 import CommentSection from '@/modules/comments/components/comment-section';
 import { getComments } from '@/modules/comments/service/get-comments';
 import TaskCreatedWebsocketHandler from '@/modules/tasks/components/task-created-websocket-handler';
@@ -38,7 +38,7 @@ type Props = Readonly<{
 }>;
 
 export default async function Page({ params }: Props) {
-  const session = await getSession();
+  const session = await auth();
 
   if (!session) {
     redirect('/auth/login');

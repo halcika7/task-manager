@@ -4,7 +4,7 @@ import { redirect } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import GoogleLogin from '@/modules/auth/components/google';
 import { LoginForm } from '@/modules/auth/components/login-form';
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
 import { LocaleLink } from '@/modules/i18n/routing';
 import {
   Card,
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 
 export default async function LoginPage() {
   const [session, t] = await Promise.all([
-    getSession(),
+    auth(),
     getTranslations('auth.login'),
   ]);
 

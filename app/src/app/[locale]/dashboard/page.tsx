@@ -3,7 +3,7 @@ import { redirect } from 'next/navigation';
 
 import type { SearchParams } from 'nuqs';
 
-import { getSession } from '@/modules/auth/lib/session';
+import { auth } from '@/modules/auth/lib';
 import ClearFiltersButton from '@/modules/tasks/components/clear-filters-button';
 import TaskCreatedWebsocketHandler from '@/modules/tasks/components/task-created-websocket-handler';
 import TaskDeletedWebsocketHandler from '@/modules/tasks/components/task-deleted-websocket-handler';
@@ -30,7 +30,7 @@ type Props = Readonly<{
 }>;
 
 export default async function Page({ searchParams }: Props) {
-  const session = await getSession();
+  const session = await auth();
 
   if (!session) {
     redirect('/auth/login');

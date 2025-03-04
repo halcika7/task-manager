@@ -122,7 +122,7 @@ export class AuthController {
 
     const frontendUrl = this.configService.getOrThrow<string>('APP_URL');
     res.redirect(
-      `${frontendUrl}/api/auth/google/callback?userId=${result.id}&name=${result.name}&accessToken=${result.accessToken}&refreshToken=${result.refreshToken}&role=${result.role}`,
+      `${frontendUrl}/api/google/callback?userId=${result.id}&name=${result.name}&accessToken=${result.accessToken}&refreshToken=${result.refreshToken}&role=${result.role}`,
     );
   }
 

@@ -4,9 +4,9 @@ import { useRouter } from 'next/navigation';
 import type { ReactNode } from 'react';
 import { useCallback } from 'react';
 
+import { logoutAction } from '@/modules/auth/actions/logout.action';
 import { AuthContext } from '@/modules/auth/provider/auth.context';
 import type { User } from '@/modules/users/types/user.type';
-import { logout as logoutAction } from '@/shared/lib/logout';
 
 interface AuthProviderProps {
   children: ReactNode;
